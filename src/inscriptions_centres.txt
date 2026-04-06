@@ -1,0 +1,5 @@
+GymClub - Manouba;16/12/2025;1 an - 500 DT
+A - Tunis (Capacité: 3);16/12/2025;1 an - 500 DT
+A - Tunis (Capacité: 3);16/12/2025;3 mois - 140 DT
+A - Tunis (Capacité: 3);16/12/2025;6 mois - 270 DT
+gym - Aouina (Capacité: 31);08/01/2025;1 an - 500 DT
