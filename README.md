@@ -74,4 +74,15 @@ Le système repose sur une architecture modulaire :
 - Évolutivité  
 - Séparation des responsabilités  
 
+## 📸 Aperçu
 
+> 🚧 Section en cours de développement  
+> Des captures d’écran de l’application seront ajoutées prochainement.
+
+## 👥 Équipe
+ 
+- 👤 **Anaghim Deraoui** — Gestion des membres
+- 👤 **Roua Ouerfelli** — Gestion des entraîneurs 
+- 👤 **Mohamed Aziz Walha** — Gestion des équipements
+- 👤 **Iheb Tarhouni** — Gestion des cours  
+- 👤 **Ranim Obey** — Gestion des centres  
