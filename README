@@ -1,40 +1,88 @@
-🏋️ GymPro — Système de Gestion de Salle de Sport
+<h1 align="center">🏋️ GymPro — Système de Gestion de Salle de Sport</h1>
 
-GymPro est une application desktop/web complète dédiée à l’optimisation et à l’automatisation de la gestion des salles de sport. Elle permet de centraliser l’ensemble des opérations administratives et opérationnelles, allant de la gestion des adhérents jusqu’au suivi des performances de l’établissement.
+<p align="center">
+  GymPro est une application desktop/web complète dédiée à l’optimisation et à l’automatisation 
+  de la gestion des salles de sport.
+</p>
 
-🎯 Objectifs du Projet
-Digitaliser la gestion quotidienne d’une salle de sport
-Réduire les tâches administratives manuelles
-Améliorer le suivi des membres et des abonnements
-Fournir des outils d’aide à la décision via des statistiques fiables
-⚙️ Fonctionnalités Principales
-👤 Gestion des Membres
-Création, modification et suppression des profils adhérents
-Gestion des informations personnelles et historiques
-💳 Gestion des Abonnements
-Création de différentes formules d’abonnement
-Suivi des dates de début et d’expiration
-Notifications des abonnements arrivant à échéance
-📅 Système de Suivi des Présences
-Enregistrement des entrées et sorties des membres
-Historique des présences
-Analyse de la fréquentation
-💰 Gestion des Paiements
-Enregistrement des transactions
-Suivi des paiements effectués et en attente
-Gestion des dettes et relances
-📊 Tableau de Bord et Reporting
-Visualisation des indicateurs clés (KPI)
-Génération de rapports détaillés
-Aide à la prise de décision
-🔐 Sécurité et Administration
-Authentification sécurisée
-Gestion des rôles et des accès (administrateur, personnel)
-Protection des données sensibles
-🏗️ Architecture (Vue Générale)
+<p align="center">
+  Elle permet de centraliser l’ensemble des opérations administratives et opérationnelles,
+  allant de la gestion des adhérents jusqu’au suivi des performances de l’établissement.
+</p>
 
+<hr>
+
+<h2>🎯 Objectifs du Projet</h2>
+<ul>
+  <li>Digitaliser la gestion quotidienne d’une salle de sport</li>
+  <li>Réduire les tâches administratives manuelles</li>
+  <li>Améliorer le suivi des membres et des abonnements</li>
+  <li>Fournir des outils d’aide à la décision via des statistiques fiables</li>
+</ul>
+
+<hr>
+
+<h2>⚙️ Fonctionnalités Principales</h2>
+
+<h3>👤 Gestion des Membres</h3>
+<ul>
+  <li>Création, modification et suppression des profils adhérents</li>
+  <li>Gestion des informations personnelles et historiques</li>
+</ul>
+
+<h3>💳 Gestion des Abonnements</h3>
+<ul>
+  <li>Création de différentes formules d’abonnement</li>
+  <li>Suivi des dates de début et d’expiration</li>
+  <li>Notifications des abonnements arrivant à échéance</li>
+</ul>
+
+<h3>📅 Système de Suivi des Présences</h3>
+<ul>
+  <li>Enregistrement des entrées et sorties des membres</li>
+  <li>Historique des présences</li>
+  <li>Analyse de la fréquentation</li>
+</ul>
+
+<h3>💰 Gestion des Paiements</h3>
+<ul>
+  <li>Enregistrement des transactions</li>
+  <li>Suivi des paiements effectués et en attente</li>
+  <li>Gestion des dettes et relances</li>
+</ul>
+
+<h3>📊 Tableau de Bord et Reporting</h3>
+<ul>
+  <li>Visualisation des indicateurs clés (KPI)</li>
+  <li>Génération de rapports détaillés</li>
+  <li>Aide à la prise de décision</li>
+</ul>
+
+<h3>🔐 Sécurité et Administration</h3>
+<ul>
+  <li>Authentification sécurisée</li>
+  <li>Gestion des rôles et des accès (administrateur, personnel)</li>
+  <li>Protection des données sensibles</li>
+</ul>
+
+<hr>
+
+<h2>🏗️ Architecture (Vue Générale)</h2>
+
+<p>
 Le système est conçu selon une architecture modulaire permettant :
+</p>
 
-Une meilleure maintenabilité
-Une évolutivité du système
-Une séparation claire des responsabilités (gestion des utilisateurs, abonnements, paiements, etc.)
+<ul>
+  <li>Une meilleure maintenabilité</li>
+  <li>Une évolutivité du système</li>
+  <li>Une séparation claire des responsabilités 
+    (gestion des utilisateurs, abonnements, paiements, etc.)
+  </li>
+</ul>
+
+<hr>
+
+<p align="center">
+  🚀 <strong>GymPro</strong> — Une solution moderne pour une gestion intelligente des salles de sport.
+</p>
