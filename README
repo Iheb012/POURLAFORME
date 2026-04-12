@@ -1,81 +1,83 @@
 <h1 align="center">🏋️ GymPro</h1>
 <h3 align="center">Système de Gestion de Salle de Sport</h3>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Version-1.0-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Platform-Desktop%20%7C%20Web-orange?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Made%20With-Java%20%7C%20SQL-red?style=for-the-badge"/>
-</p>
+---
+
+## 📌 Table of Contents
+
+- [📍 Présentation](#-présentation)
+- [🎯 Objectifs du Projet](#-objectifs-du-projet)
+- [⚙️ Fonctionnalités](#️-fonctionnalités)
+- [🏗️ Architecture](#️-architecture)
+- [🚀 Technologies](#-technologies)
+- [📸 Aperçu](#-aperçu)
+- [👥 Équipe](#-équipe)
 
 ---
 
-## 📌 Présentation
+## 📍 Présentation
 
-**GymPro** est une application desktop/web complète dédiée à l’optimisation et à l’automatisation  
+GymPro est une application desktop/web complète dédiée à l’optimisation et à l’automatisation  
 de la gestion des salles de sport.
 
-Elle permet de **centraliser toutes les opérations** administratives et opérationnelles,  
-allant de la gestion des adhérents jusqu’au suivi des performances de l’établissement.
+Elle permet de centraliser l’ensemble des opérations administratives et opérationnelles,  
+allant de la gestion des adhérents jusqu’au suivi des performances.
 
 ---
 
 ## 🎯 Objectifs du Projet
 
-✔️ Digitaliser la gestion quotidienne  
-✔️ Réduire les tâches administratives manuelles  
-✔️ Améliorer le suivi des membres et abonnements  
-✔️ Fournir des outils d’aide à la décision  
+- Digitaliser la gestion quotidienne  
+- Réduire les tâches administratives  
+- Améliorer le suivi des membres  
+- Fournir des statistiques fiables  
 
 ---
 
 ## ⚙️ Fonctionnalités
 
 ### 👤 Gestion des Membres
-- Création, modification et suppression des profils  
-- Gestion des informations personnelles  
-- Historique des membres  
+- Création, modification et suppression  
+- Gestion des profils et historiques  
 
 ### 💳 Gestion des Abonnements
-- Création de formules d’abonnement  
-- Suivi des dates d’expiration  
-- Notifications automatiques  
+- Formules d’abonnement  
+- Suivi des expirations  
+- Notifications  
 
 ### 📅 Suivi des Présences
-- Enregistrement des entrées/sorties  
-- Historique des présences  
+- Check-in / Check-out  
+- Historique  
 - Analyse de fréquentation  
 
 ### 💰 Gestion des Paiements
-- Enregistrement des transactions  
-- Suivi des paiements et impayés  
+- Transactions  
+- Paiements en attente  
 - Gestion des dettes  
 
 ### 📊 Dashboard & Reporting
-- Visualisation des KPI  
-- Génération de rapports  
+- KPI  
+- Rapports  
 - Aide à la décision  
 
 ### 🔐 Sécurité
-- Authentification sécurisée  
-- Gestion des rôles (Admin / Staff)  
+- Authentification  
+- Rôles et permissions  
 - Protection des données  
 
 ---
 
 ## 🏗️ Architecture
 
-Le système repose sur une **architecture modulaire** :
+Le système repose sur une architecture modulaire :
 
-- 🔹 Maintenabilité améliorée  
-- 🔹 Évolutivité du système  
-- 🔹 Séparation des responsabilités  
+- Maintenabilité  
+- Évolutivité  
+- Séparation des responsabilités  
 
 ---
 
-## 🚀 Technologies Utilisées
+## 🚀 Technologies
 
-```bash
-- Java
-- SQL
-- (Ajouter ici: JavaFX / Spring / etc.)
+C
+HTML
