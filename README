@@ -1,88 +1,81 @@
-<h1 align="center">🏋️ GymPro — Système de Gestion de Salle de Sport</h1>
+<h1 align="center">🏋️ GymPro</h1>
+<h3 align="center">Système de Gestion de Salle de Sport</h3>
 
 <p align="center">
-  GymPro est une application desktop/web complète dédiée à l’optimisation et à l’automatisation 
-  de la gestion des salles de sport.
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Version-1.0-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Platform-Desktop%20%7C%20Web-orange?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Made%20With-Java%20%7C%20SQL-red?style=for-the-badge"/>
 </p>
 
-<p align="center">
-  Elle permet de centraliser l’ensemble des opérations administratives et opérationnelles,
-  allant de la gestion des adhérents jusqu’au suivi des performances de l’établissement.
-</p>
+---
 
-<hr>
+## 📌 Présentation
 
-<h2>🎯 Objectifs du Projet</h2>
-<ul>
-  <li>Digitaliser la gestion quotidienne d’une salle de sport</li>
-  <li>Réduire les tâches administratives manuelles</li>
-  <li>Améliorer le suivi des membres et des abonnements</li>
-  <li>Fournir des outils d’aide à la décision via des statistiques fiables</li>
-</ul>
+**GymPro** est une application desktop/web complète dédiée à l’optimisation et à l’automatisation  
+de la gestion des salles de sport.
 
-<hr>
+Elle permet de **centraliser toutes les opérations** administratives et opérationnelles,  
+allant de la gestion des adhérents jusqu’au suivi des performances de l’établissement.
 
-<h2>⚙️ Fonctionnalités Principales</h2>
+---
 
-<h3>👤 Gestion des Membres</h3>
-<ul>
-  <li>Création, modification et suppression des profils adhérents</li>
-  <li>Gestion des informations personnelles et historiques</li>
-</ul>
+## 🎯 Objectifs du Projet
 
-<h3>💳 Gestion des Abonnements</h3>
-<ul>
-  <li>Création de différentes formules d’abonnement</li>
-  <li>Suivi des dates de début et d’expiration</li>
-  <li>Notifications des abonnements arrivant à échéance</li>
-</ul>
+✔️ Digitaliser la gestion quotidienne  
+✔️ Réduire les tâches administratives manuelles  
+✔️ Améliorer le suivi des membres et abonnements  
+✔️ Fournir des outils d’aide à la décision  
 
-<h3>📅 Système de Suivi des Présences</h3>
-<ul>
-  <li>Enregistrement des entrées et sorties des membres</li>
-  <li>Historique des présences</li>
-  <li>Analyse de la fréquentation</li>
-</ul>
+---
 
-<h3>💰 Gestion des Paiements</h3>
-<ul>
-  <li>Enregistrement des transactions</li>
-  <li>Suivi des paiements effectués et en attente</li>
-  <li>Gestion des dettes et relances</li>
-</ul>
+## ⚙️ Fonctionnalités
 
-<h3>📊 Tableau de Bord et Reporting</h3>
-<ul>
-  <li>Visualisation des indicateurs clés (KPI)</li>
-  <li>Génération de rapports détaillés</li>
-  <li>Aide à la prise de décision</li>
-</ul>
+### 👤 Gestion des Membres
+- Création, modification et suppression des profils  
+- Gestion des informations personnelles  
+- Historique des membres  
 
-<h3>🔐 Sécurité et Administration</h3>
-<ul>
-  <li>Authentification sécurisée</li>
-  <li>Gestion des rôles et des accès (administrateur, personnel)</li>
-  <li>Protection des données sensibles</li>
-</ul>
+### 💳 Gestion des Abonnements
+- Création de formules d’abonnement  
+- Suivi des dates d’expiration  
+- Notifications automatiques  
 
-<hr>
+### 📅 Suivi des Présences
+- Enregistrement des entrées/sorties  
+- Historique des présences  
+- Analyse de fréquentation  
 
-<h2>🏗️ Architecture (Vue Générale)</h2>
+### 💰 Gestion des Paiements
+- Enregistrement des transactions  
+- Suivi des paiements et impayés  
+- Gestion des dettes  
 
-<p>
-Le système est conçu selon une architecture modulaire permettant :
-</p>
+### 📊 Dashboard & Reporting
+- Visualisation des KPI  
+- Génération de rapports  
+- Aide à la décision  
 
-<ul>
-  <li>Une meilleure maintenabilité</li>
-  <li>Une évolutivité du système</li>
-  <li>Une séparation claire des responsabilités 
-    (gestion des utilisateurs, abonnements, paiements, etc.)
-  </li>
-</ul>
+### 🔐 Sécurité
+- Authentification sécurisée  
+- Gestion des rôles (Admin / Staff)  
+- Protection des données  
 
-<hr>
+---
 
-<p align="center">
-  🚀 <strong>GymPro</strong> — Une solution moderne pour une gestion intelligente des salles de sport.
-</p>
+## 🏗️ Architecture
+
+Le système repose sur une **architecture modulaire** :
+
+- 🔹 Maintenabilité améliorée  
+- 🔹 Évolutivité du système  
+- 🔹 Séparation des responsabilités  
+
+---
+
+## 🚀 Technologies Utilisées
+
+```bash
+- Java
+- SQL
+- (Ajouter ici: JavaFX / Spring / etc.)
