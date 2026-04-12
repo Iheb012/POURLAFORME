@@ -1,14 +1,40 @@
-🏋️ GymPro — Gym Management Software
+🏋️ GymPro — Système de Gestion de Salle de Sport
 
-A comprehensive desktop/web application designed to streamline the management of gym operations — from member registrations and subscriptions to attendance tracking and payments.
+GymPro est une application desktop/web complète dédiée à l’optimisation et à l’automatisation de la gestion des salles de sport. Elle permet de centraliser l’ensemble des opérations administratives et opérationnelles, allant de la gestion des adhérents jusqu’au suivi des performances de l’établissement.
 
----
+🎯 Objectifs du Projet
+Digitaliser la gestion quotidienne d’une salle de sport
+Réduire les tâches administratives manuelles
+Améliorer le suivi des membres et des abonnements
+Fournir des outils d’aide à la décision via des statistiques fiables
+⚙️ Fonctionnalités Principales
+👤 Gestion des Membres
+Création, modification et suppression des profils adhérents
+Gestion des informations personnelles et historiques
+💳 Gestion des Abonnements
+Création de différentes formules d’abonnement
+Suivi des dates de début et d’expiration
+Notifications des abonnements arrivant à échéance
+📅 Système de Suivi des Présences
+Enregistrement des entrées et sorties des membres
+Historique des présences
+Analyse de la fréquentation
+💰 Gestion des Paiements
+Enregistrement des transactions
+Suivi des paiements effectués et en attente
+Gestion des dettes et relances
+📊 Tableau de Bord et Reporting
+Visualisation des indicateurs clés (KPI)
+Génération de rapports détaillés
+Aide à la prise de décision
+🔐 Sécurité et Administration
+Authentification sécurisée
+Gestion des rôles et des accès (administrateur, personnel)
+Protection des données sensibles
+🏗️ Architecture (Vue Générale)
 
-## 📌 Features
+Le système est conçu selon une architecture modulaire permettant :
 
-- 👤 **Member Management** — Add, update, and remove gym members
-- 💳 **Subscription Tracking** — Manage membership plans and expiry dates
-- 📅 **Attendance System** — Track daily check-ins and check-outs
-- 💰 **Payment Management** — Record and monitor payments and dues
-- 📊 **Dashboard & Reports** — View statistics and generate reports
-- 🔐 **Admin Panel** — Secure login for staff and administrators
+Une meilleure maintenabilité
+Une évolutivité du système
+Une séparation claire des responsabilités (gestion des utilisateurs, abonnements, paiements, etc.)
