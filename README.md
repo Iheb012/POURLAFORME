@@ -9,7 +9,6 @@
 - [🎯 Objectifs du Projet](#-objectifs-du-projet)
 - [⚙️ Fonctionnalités](#️-fonctionnalités)
 - [🏗️ Architecture](#️-architecture)
-- [🚀 Technologies](#-technologies)
 - [📸 Aperçu](#-aperçu)
 - [👥 Équipe](#-équipe)
 
@@ -75,9 +74,4 @@ Le système repose sur une architecture modulaire :
 - Évolutivité  
 - Séparation des responsabilités  
 
----
 
-## 🚀 Technologies
-
-C
-HTML
