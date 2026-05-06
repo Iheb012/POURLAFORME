@@ -1,4 +1,4 @@
-<h1 align="center">🏋️ GymPro</h1>
+<h1 align="center">🏋️ Pour La Forme Gym</h1>
 <h3 align="center">Système de Gestion de Salle de Sport</h3>
 
 ---
@@ -76,8 +76,14 @@ Le système repose sur une architecture modulaire :
 
 ## 📸 Aperçu
 
-> 🚧 Section en cours de développement  
-> Des captures d’écran de l’application seront ajoutées prochainement.
+<img width="1283" height="835" alt="image1" src="https://github.com/user-attachments/assets/09cbf184-42fd-485c-b332-d66d03058f0d" />
+<img width="1279" height="829" alt="image2" src="https://github.com/user-attachments/assets/64d2a4b1-77c4-4372-9997-1a2a81b9f63e" />
+<img width="1275" height="828" alt="image3" src="https://github.com/user-attachments/assets/6c40dfa9-dea6-4fcd-b299-772a89f9ae40" />
+<img width="1279" height="853" alt="image4" src="https://github.com/user-attachments/assets/29e7fe01-01eb-469b-bcae-f3233ba6c272" />
+<img width="1341" height="848" alt="image5" src="https://github.com/user-attachments/assets/51add44c-7ac3-4fe9-af0e-5fd387f07328" />
+
+
+
 
 ## 👥 Équipe
  
