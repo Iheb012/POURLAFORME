@@ -1,6 +1,0 @@
-gsk_your_groq_api_key_here
-
-# Remplacez la ligne ci-dessus par votre clé API Groq réelle
-# Obtenez votre clé sur: https://console.groq.com/keys
-# La clé doit commencer par 'gsk_'
-# Exemple: gsk_abc123def456ghi789jkl012mno345pqr678
