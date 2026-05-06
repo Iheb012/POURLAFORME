@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=MyGym
+Comment=Application de gestion de salle de sport
+Exec=sh -c "cd '/home/aziz/Projects/final projetC/src' && './project3'"
+Icon=/home/aziz/Projects/final projetC/pixmaps/capture1.png
+Terminal=false
+Categories=Utility;
+Path=/home/aziz/Projects/final projetC/src

@@ -1,0 +1,435 @@
+#ifdef HAVE_CONFIG_H
+#  include <config.h>
+#endif
+#ifndef MIN
+#define MIN(a, b) ((a) < (b) ? (a) : (b))
+#endif
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
+#include <gtk/gtk.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <cairo.h>
+#include <math.h>
+#include <time.h>
+#include <unistd.h>
+#include "callbacks.h"
+#include "interface.h"
+#include "support.h"
+#include "common.h"
+#include "background.h"
+#include "membre.h"
+#include "entraineur.h"
+#include "cours.h"
+#include "equipement.h"
+#include "centre.h"
+#include <gdk-pixbuf/gdk-pixbuf.h>
+static GdkPixmap *bg_pixmap = NULL;
+static int bg_width = 0, bg_height = 0;
+
+
+void
+on_window_admin_destroy                (GtkObject       *object,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_btn_avatar_clicked                  (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+gboolean
+on_eventbox1_expose_event              (GtkWidget       *widget,
+                                        GdkEventExpose  *event,
+                                        gpointer         user_data)
+{
+
+  return FALSE;
+}
+
+
+gboolean
+on_da_mini_bars_expose                 (GtkWidget       *widget,
+                                        GdkEventExpose  *event,
+                                        gpointer         user_data)
+{
+
+  return FALSE;
+}
+
+
+void
+on_treeview_membres_row_activated      (GtkTreeView     *treeview,
+                                        GtkTreePath     *path,
+                                        GtkTreeViewColumn *column,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_btn_add_clicked                     (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_btn_edit_clicked                    (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_btn_delete_clicked                  (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_btn_search_side_clicked             (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+gboolean
+on_da_abonnement_expose                (GtkWidget       *widget,
+                                        GdkEventExpose  *event,
+                                        gpointer         user_data)
+{
+
+  return FALSE;
+}
+
+
+gboolean
+on_da_evolution_expose                 (GtkWidget       *widget,
+                                        GdkEventExpose  *event,
+                                        gpointer         user_data)
+{
+
+  return FALSE;
+}
+
+
+void
+on_btn_deconnexion_clicked             (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_treeview_cours_row_activated        (GtkTreeView     *treeview,
+                                        GtkTreePath     *path,
+                                        GtkTreeViewColumn *column,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_btn_cours_delete_clicked            (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_btn_cours_search_clicked            (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_btn_cours_add_clicked               (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_btn_cours_edit_clicked              (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+gboolean
+on_da_cours_niveaux_expose             (GtkWidget       *widget,
+                                        GdkEventExpose  *event,
+                                        gpointer         user_data)
+{
+
+  return FALSE;
+}
+
+
+gboolean
+on_da_cours_evolution_expose           (GtkWidget       *widget,
+                                        GdkEventExpose  *event,
+                                        gpointer         user_data)
+{
+
+  return FALSE;
+}
+
+
+gboolean
+on_eventbox3_expose_event              (GtkWidget       *widget,
+                                        GdkEventExpose  *event,
+                                        gpointer         user_data)
+{
+
+  return FALSE;
+}
+
+
+gboolean
+on_da_e4_mini_expose                   (GtkWidget       *widget,
+                                        GdkEventExpose  *event,
+                                        gpointer         user_data)
+{
+
+  return FALSE;
+}
+
+
+void
+on_treeview_entraineurs_row_activated  (GtkTreeView     *treeview,
+                                        GtkTreePath     *path,
+                                        GtkTreeViewColumn *column,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_btn_ent_add_clicked                 (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_btn_ent_edit_clicked                (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_btn_ent_delete_clicked              (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_btn_ent_search_clicked              (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+gboolean
+on_da_ent_specialites_expose           (GtkWidget       *widget,
+                                        GdkEventExpose  *event,
+                                        gpointer         user_data)
+{
+
+  return FALSE;
+}
+
+
+gboolean
+on_da_ent_top_coachs_expose            (GtkWidget       *widget,
+                                        GdkEventExpose  *event,
+                                        gpointer         user_data)
+{
+
+  return FALSE;
+}
+
+
+gboolean
+on_da_q4_mini_expose                   (GtkWidget       *widget,
+                                        GdkEventExpose  *event,
+                                        gpointer         user_data)
+{
+
+  return FALSE;
+}
+
+
+void
+on_treeview_equipements_row_activated  (GtkTreeView     *treeview,
+                                        GtkTreePath     *path,
+                                        GtkTreeViewColumn *column,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_btn_equip_add_clicked               (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_btn_equip_edit_clicked              (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_btn_equip_delete_clicked            (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_btn_equip_search_clicked            (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+gboolean
+on_da_equip_dispo_expose               (GtkWidget       *widget,
+                                        GdkEventExpose  *event,
+                                        gpointer         user_data)
+{
+
+  return FALSE;
+}
+
+
+gboolean
+on_da_equip_maintenance_expose         (GtkWidget       *widget,
+                                        GdkEventExpose  *event,
+                                        gpointer         user_data)
+{
+
+  return FALSE;
+}
+
+
+gboolean
+on_eventbox5_expose_event              (GtkWidget       *widget,
+                                        GdkEventExpose  *event,
+                                        gpointer         user_data)
+{
+
+  return FALSE;
+}
+
+
+gboolean
+on_da_r4_mini_expose                   (GtkWidget       *widget,
+                                        GdkEventExpose  *event,
+                                        gpointer         user_data)
+{
+
+  return FALSE;
+}
+
+
+void
+on_treeview_centres_row_activated      (GtkTreeView     *treeview,
+                                        GtkTreePath     *path,
+                                        GtkTreeViewColumn *column,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_btn_ctr_add_clicked                 (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_btn_ctr_edit_clicked                (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_btn_ctr_delete_clicked              (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_btn_ctr_search_clicked              (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+gboolean
+on_da_ctr_par_ville_expose             (GtkWidget       *widget,
+                                        GdkEventExpose  *event,
+                                        gpointer         user_data)
+{
+
+  return FALSE;
+}
+
+
+gboolean
+on_da_ctr_taux_occ_expose              (GtkWidget       *widget,
+                                        GdkEventExpose  *event,
+                                        gpointer         user_data)
+{
+
+  return FALSE;
+}
+

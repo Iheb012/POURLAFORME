@@ -1,0 +1,15 @@
+2 Gymnastique aziz SalleB 10/05/2025:14:00 Débutant
+3 Dance 0 SalleC 10/02/2025:09:00 Intermédiaire
+4 Spinning Marc SalleA 12/05/2025:18:00 Avancé
+5 Pilates Amira SalleB 15/05/2025:11:00 Intermédiaire
+6 Boxe Karim SalleC 18/05/2025:19:00 Débutant
+7 Zumba Sofien SalleA 20/05/2025:17:00 Intermédiaire
+8 Cardio Roua SalleB 22/05/2025:08:00 Débutant
+9 CrossFit Sarah SalleC 25/05/2025:20:00 Avancé
+10 Musculation Mehdi SalleA 28/05/2025:16:00 Intermédiaire
+11 Step Nadia SalleB 30/05/2025:10:00 Débutant
+12 BodyPump Hamza SalleC 01/06/2025:19:00 Avancé
+13 Aquagym Ines SalleA 03/06/2025:15:00 Intermédiaire
+14 PilatesAvance Amira SalleB 05/06/2025:09:00 Avancé
+15 YogaFlow Lea SalleC 07/06/2025:10:00 Intermédiaire
+16 test test test 30/04/2026 avancé
