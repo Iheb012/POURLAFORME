@@ -1,4 +1,0 @@
-Matin:20
-Midi:15
-Après-midi:25
-Soir:40

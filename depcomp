@@ -1,4 +1,0 @@
-#!/bin/sh
-# Script depcomp simplifié - fait simplement la compilation sans dépendances
-"$@"
-exit 0
