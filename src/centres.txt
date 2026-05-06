@@ -1,1 +1,6 @@
-1;gym;Non spécifié;Aouina;31;F
+1;Gym Plus;123 Avenue Habib Bourguiba;Tunis;250;A
+2;Fitness Pro;45 Rue de la Liberté;Ariana;200;A
+3;Strength Club;78 Boulevard du 7 Novembre;L'Aouina;180;A
+4;Cardio Center;12 Rue des Sports;La Marsa;220;A
+5;Yoga Studio;34 Rue du Calme;Tunis;100;A
+6;test;test;test ;20

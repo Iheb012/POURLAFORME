@@ -9,51 +9,60 @@
 // STRUCTURES UNIFIQUES
 // ============================================================================
 
+// Déclarations des structures
 typedef struct {
     int id;
-    char nom[100];  // Increased size to hold both nom and prenom
+    char nom[100];
     char email[100];
     int age;
-    char sexe[20];
-    char Typeabonnement[20];
+    char sexe[10];
+    char Typeabonnement[50];
     float Tarif;
-    
 } Membre;
+
 typedef struct {
     int id;
-    char nometprenom[60];
-    char specialite[30];
-    int experience;
-    int age;           
-    char sexe;        
-} Entraineur;
-typedef struct {
-    int id;
-    char cours[30];
-    char coach[30];
-    char date_heure[30];
-    char salle[20];
-    char niveau[20];
+    char cours[100];
+    char coach[100];
+    char salle[100];
+    char date_heure[100];
+    char niveau[50];
 } Cours;
 
 typedef struct {
-    char reference[20];
-    char type[30];
-    char etat;
-    char centre[50];
+    int id;
+    char nometprenom[100];
+    char specialite[100];
+    int experience;
+    int age;
+    char sexe;
+} Entraineur;
+
+typedef struct {
+    char reference[50];
+    char type[100];
+    char centre[100];
     int capacite;
     char disponibilite;
+    char etat;
 } Equipement;
 
 typedef struct {
     int id;
     char nom[100];
     char adresse[200];
-    char ville[50];
+    char ville[100];
     int capacite;
-    char etat;
+    char etat;          // ← AJOUTEZ CETTE LIGNE ('A' pour Actif, 'I' pour Inactif)
 } Centre;
 
+typedef struct {
+    int jeunes, adultes, seniors, total_membres;
+    int niveau1, niveau2, niveau3, total_cours;
+    int musculation, gymnastique, yoga, total_entraineurs;
+    int mobilites, musculation_eq, cardio, total_equipements;
+    int tunis, ariana, aouina, total_centres;
+} DiagrammeData;
 // ============================================================================
 // STRUCTURE AUTHENTIFICATION
 // ============================================================================

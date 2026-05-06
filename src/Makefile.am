@@ -19,4 +19,4 @@ project3_SOURCES = \
 	equipement.c equipement.h \
 	centre.c centre.h
 
-project3_LDADD = @PACKAGE_LIBS@ $(INTLLIBS)
+project3_LDADD = @PACKAGE_LIBS@ $(INTLLIBS) -lcurl

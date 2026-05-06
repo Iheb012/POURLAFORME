@@ -86,21 +86,45 @@ int verifier_login(const char *username, const char *password, char *user_type, 
         return 0;
     }
     
-    Utilisateur user;
+    char ligne[256];
+    char file_username[100], file_password[100], file_type[50];
+    int file_id;
     int trouve = 0;
     
-    while (fscanf(file, "%49s %49s %19s %d", 
-                  user.username, user.password, user.type, &user.user_id) == 4) {
-        if (strcmp(user.username, username) == 0 && 
-            strcmp(user.password, password) == 0) {
-            strcpy(user_type, user.type);
-            *user_id = user.user_id;
-            trouve = 1;
-            break;
+    while (fgets(ligne, sizeof(ligne), file)) {
+        // Supprimer le saut de ligne
+        ligne[strcspn(ligne, "\n")] = 0;
+        
+        // Ignorer les lignes vides
+        if (strlen(ligne) == 0) continue;
+        
+        // Format de votre fichier: username password role id
+        int n = sscanf(ligne, "%99s %99s %49s %d", 
+                       file_username, file_password, file_type, &file_id);
+        
+        if (n == 4) {
+            printf("Lu: user=%s, pass=%s, role=%s, id=%d\n", 
+                   file_username, file_password, file_type, file_id);
+            
+            if (strcmp(file_username, username) == 0 && 
+                strcmp(file_password, password) == 0) {
+                strcpy(user_type, file_type);
+                *user_id = file_id;
+                trouve = 1;
+                printf("Authentification réussie! Rôle: %s, ID: %d\n", user_type, file_id);
+                break;
+            }
+        } else {
+            printf("Format incorrect pour la ligne: %s (n=%d)\n", ligne, n);
         }
     }
     
     fclose(file);
+    
+    if (!trouve) {
+        printf("Authentification échouée pour: %s\n", username);
+    }
+    
     return trouve;
 }
 

@@ -11,11 +11,11 @@
 
 #include "interface.h"
 #include "support.h"
+#include "callbacks.h"
 
-int main (int argc, char *argv[])
+int
+main (int argc, char *argv[])
 {
-  GtkWidget *Interface;
-
 #ifdef ENABLE_NLS
   bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
   bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
@@ -24,16 +24,29 @@ int main (int argc, char *argv[])
 
   gtk_set_locale ();
   gtk_init (&argc, &argv);
+  gtk_rc_parse("gtkrc");
+  printf("Fichier de style gtkrc chargé\n");
 
-  // ADD THESE LINES TO TELL GTK WHERE TO FIND YOUR IMAGES:
-  add_pixmap_directory ("pixmaps");
-  add_pixmap_directory ("../pixmaps");
+  add_pixmap_directory (PACKAGE_DATA_DIR "/" PACKAGE "/pixmaps");
   add_pixmap_directory ("./pixmaps");
-  // If running from a different location, you can add absolute path:
-  // add_pixmap_directory ("/full/path/to/your/project/pixmaps");
+  add_pixmap_directory ("./../pixmaps");
+  add_pixmap_directory ("./images");
 
-  Interface = create_Interface ();
-  gtk_widget_show (Interface);
+  // Charger l'image de fond
+  load_background_image();
+
+  // Créer la page d'accueil
+  GtkWidget *window = create_window_homepage();
+  
+  if (window != NULL) {
+    // Appliquer l'image de fond (cherche eventbox_bg_homepage)
+    appliquer_background_a_fenetre(window);
+    
+    // Appliquer les couleurs aux frames
+    appliquer_couleurs_tous_frames(window);
+    appliquer_couleurs_sombres(window);
+    gtk_widget_show_all(window);
+  }
 
   gtk_main ();
   return 0;

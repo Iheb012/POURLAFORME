@@ -231,10 +231,10 @@ STRIP =
 USE_NLS = yes
 VERSION = 0.1
 XGETTEXT = /usr/bin/xgettext
-abs_builddir = /home/aziz/Projects/final projetC/src
-abs_srcdir = /home/aziz/Projects/final projetC/src
-abs_top_builddir = /home/aziz/Projects/final projetC
-abs_top_srcdir = /home/aziz/Projects/final projetC
+abs_builddir = /home/aziz/Projects/POURLAFORME-beta2.0/src
+abs_srcdir = /home/aziz/Projects/POURLAFORME-beta2.0/src
+abs_top_builddir = /home/aziz/Projects/POURLAFORME-beta2.0
+abs_top_srcdir = /home/aziz/Projects/POURLAFORME-beta2.0
 ac_ct_CC = gcc
 am__include = include
 am__leading_dot = .
@@ -253,7 +253,7 @@ host_alias =
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} '/home/aziz/Projects/final projetC/install-sh'
+install_sh = ${SHELL} /home/aziz/Projects/POURLAFORME-beta2.0/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -291,7 +291,7 @@ project3_SOURCES = \
 	equipement.c equipement.h \
 	centre.c centre.h
 
-project3_LDADD = -lgtk-x11-2.0 -lgdk-x11-2.0 -lpangocairo-1.0 -latk-1.0 -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lpangoft2-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lfontconfig -lfreetype $(INTLLIBS) -lm
+project3_LDADD = -lgtk-x11-2.0 -lgdk-x11-2.0 -lpangocairo-1.0 -latk-1.0 -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lpangoft2-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lfontconfig -lfreetype $(INTLLIBS) -lcurl
 all: all-am
 
 .SUFFIXES:
