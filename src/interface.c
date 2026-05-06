@@ -850,6 +850,7 @@ create_window_login (void)
 GtkWidget*
 create_window_admin (void)
 {
+<<<<<<< HEAD
   GtkWidget *window_admin;
   GtkWidget *vbox_root;
   GtkWidget *eb_topbar;
@@ -1183,6 +1184,356 @@ create_window_admin (void)
   GtkWidget *da_ctr_capacite;
   GtkWidget *btn_deco_ctr;
   GtkWidget *lbl_deco_ctr;
+=======
+  GtkWidget *Login;
+  GtkWidget *fixed2;
+  GtkWidget *image6;
+  GtkWidget *image7;
+  GtkWidget *image5;
+  GtkWidget *image10;
+  GtkWidget *image9;
+  GtkWidget *image11;
+  GtkWidget *image12;
+  GtkWidget *image13;
+  GtkWidget *image14;
+  GtkWidget *image22;
+  GtkWidget *label488;
+  GtkWidget *entry2;
+  GtkWidget *entry3;
+  GtkWidget *label492;
+  GtkWidget *label490;
+  GtkWidget *checkbutton33;
+  GtkWidget *label489;
+  GtkWidget *btn_login;
+  GtkWidget *alignment114;
+  GtkWidget *hbox112;
+  GtkWidget *image200;
+  GtkWidget *label491;
+  GtkWidget *btn_register;
+  GtkWidget *alignment115;
+  GtkWidget *hbox113;
+  GtkWidget *image201;
+  GtkWidget *label493;
+
+  Login = gtk_window_new (GTK_WINDOW_TOPLEVEL);
+  gtk_window_set_title (GTK_WINDOW (Login), _("Login"));
+  gtk_window_set_resizable (GTK_WINDOW (Login), FALSE);
+
+  fixed2 = gtk_fixed_new ();
+  gtk_widget_show (fixed2);
+  gtk_container_add (GTK_CONTAINER (Login), fixed2);
+
+  image6 = create_pixmap (Login, "Sans titre.png");
+  gtk_widget_show (image6);
+  gtk_fixed_put (GTK_FIXED (fixed2), image6, 0, 0);
+  gtk_widget_set_size_request (image6, 1136, 96);
+
+  image7 = create_pixmap (Login, "Capture d'écran 2025-10-23 144300.png");
+  gtk_widget_show (image7);
+  gtk_fixed_put (GTK_FIXED (fixed2), image7, 56, 0);
+  gtk_widget_set_size_request (image7, 224, 96);
+
+  image5 = create_pixmap (Login, "Sans titre.png");
+  gtk_widget_show (image5);
+  gtk_fixed_put (GTK_FIXED (fixed2), image5, 0, 568);
+  gtk_widget_set_size_request (image5, 1136, 96);
+
+  image10 = create_pixmap (Login, "12.png");
+  gtk_widget_show (image10);
+  gtk_fixed_put (GTK_FIXED (fixed2), image10, 72, 592);
+  gtk_widget_set_size_request (image10, 240, 40);
+
+  image9 = create_pixmap (Login, "11.png");
+  gtk_widget_show (image9);
+  gtk_fixed_put (GTK_FIXED (fixed2), image9, 432, 568);
+  gtk_widget_set_size_request (image9, 165, 45);
+
+  image11 = create_pixmap (Login, "13.png");
+  gtk_widget_show (image11);
+  gtk_fixed_put (GTK_FIXED (fixed2), image11, 552, 576);
+  gtk_widget_set_size_request (image11, 240, 40);
+
+  image12 = create_pixmap (Login, "14.png");
+  gtk_widget_show (image12);
+  gtk_fixed_put (GTK_FIXED (fixed2), image12, 520, 608);
+  gtk_widget_set_size_request (image12, 240, 40);
+
+  image13 = create_pixmap (Login, "15.png");
+  gtk_widget_show (image13);
+  gtk_fixed_put (GTK_FIXED (fixed2), image13, 752, 576);
+  gtk_widget_set_size_request (image13, 240, 40);
+
+  image14 = create_pixmap (Login, "16.png");
+  gtk_widget_show (image14);
+  gtk_fixed_put (GTK_FIXED (fixed2), image14, 728, 608);
+  gtk_widget_set_size_request (image14, 240, 40);
+
+  image22 = create_pixmap (Login, "Black and Red Minimalist Modern Registration Gym Website Prototype.png");
+  gtk_widget_show (image22);
+  gtk_fixed_put (GTK_FIXED (fixed2), image22, 352, 96);
+  gtk_widget_set_size_request (image22, 784, 472);
+
+  label488 = gtk_label_new (_("<span foreground=\"red\" size=\"20000\"weight=\"bold\">Se connecter</span>"));
+  gtk_widget_show (label488);
+  gtk_fixed_put (GTK_FIXED (fixed2), label488, 88, 136);
+  gtk_widget_set_size_request (label488, 169, 65);
+  gtk_label_set_use_markup (GTK_LABEL (label488), TRUE);
+
+  entry2 = gtk_entry_new ();
+  gtk_widget_show (entry2);
+  gtk_fixed_put (GTK_FIXED (fixed2), entry2, 168, 248);
+  gtk_widget_set_size_request (entry2, 160, 27);
+  gtk_entry_set_invisible_char (GTK_ENTRY (entry2), 8226);
+
+  entry3 = gtk_entry_new ();
+  gtk_widget_show (entry3);
+  gtk_fixed_put (GTK_FIXED (fixed2), entry3, 168, 320);
+  gtk_widget_set_size_request (entry3, 160, 27);
+  gtk_entry_set_invisible_char (GTK_ENTRY (entry3), 8226);
+
+  label492 = gtk_label_new (_("<span foreground=\"blue\" size=\"12000\"weight=\"bold\">si tu n'a pas encore un compte</span>"));
+  gtk_widget_show (label492);
+  gtk_fixed_put (GTK_FIXED (fixed2), label492, 32, 472);
+  gtk_widget_set_size_request (label492, 256, 33);
+  gtk_label_set_use_markup (GTK_LABEL (label492), TRUE);
+
+  label490 = gtk_label_new (_("<span foreground=\"GREY\" size=\"12000\"weight=\"bold\">Mot de passe:</span>"));
+  gtk_widget_show (label490);
+  gtk_fixed_put (GTK_FIXED (fixed2), label490, 32, 320);
+  gtk_widget_set_size_request (label490, 128, 33);
+  gtk_label_set_use_markup (GTK_LABEL (label490), TRUE);
+
+  checkbutton33 = gtk_check_button_new_with_mnemonic (_("i'm not a robot"));
+  gtk_widget_show (checkbutton33);
+  gtk_fixed_put (GTK_FIXED (fixed2), checkbutton33, 104, 368);
+  gtk_widget_set_size_request (checkbutton33, 144, 32);
+
+  label489 = gtk_label_new (_("<span foreground=\"GREY\" size=\"12000\"weight=\"bold\">               Nom\n d'utulisateur/Email:</span>"));
+  gtk_widget_show (label489);
+  gtk_fixed_put (GTK_FIXED (fixed2), label489, 0, 232);
+  gtk_widget_set_size_request (label489, 160, 41);
+  gtk_label_set_use_markup (GTK_LABEL (label489), TRUE);
+
+  btn_login = gtk_button_new ();
+  gtk_widget_show (btn_login);
+  gtk_fixed_put (GTK_FIXED (fixed2), btn_login, 104, 408);
+  gtk_widget_set_size_request (btn_login, 128, 45);
+
+  alignment114 = gtk_alignment_new (0.5, 0.5, 0, 0);
+  gtk_widget_show (alignment114);
+  gtk_container_add (GTK_CONTAINER (btn_login), alignment114);
+
+  hbox112 = gtk_hbox_new (FALSE, 2);
+  gtk_widget_show (hbox112);
+  gtk_container_add (GTK_CONTAINER (alignment114), hbox112);
+
+  image200 = gtk_image_new_from_stock ("gtk-apply", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image200);
+  gtk_box_pack_start (GTK_BOX (hbox112), image200, FALSE, FALSE, 0);
+
+  label491 = gtk_label_new_with_mnemonic (_("Se connecter"));
+  gtk_widget_show (label491);
+  gtk_box_pack_start (GTK_BOX (hbox112), label491, FALSE, FALSE, 0);
+
+  btn_register = gtk_button_new ();
+  gtk_widget_show (btn_register);
+  gtk_fixed_put (GTK_FIXED (fixed2), btn_register, 104, 512);
+  gtk_widget_set_size_request (btn_register, 130, 37);
+
+  alignment115 = gtk_alignment_new (0.5, 0.5, 0, 0);
+  gtk_widget_show (alignment115);
+  gtk_container_add (GTK_CONTAINER (btn_register), alignment115);
+
+  hbox113 = gtk_hbox_new (FALSE, 2);
+  gtk_widget_show (hbox113);
+  gtk_container_add (GTK_CONTAINER (alignment115), hbox113);
+
+  image201 = gtk_image_new_from_stock ("gtk-add", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image201);
+  gtk_box_pack_start (GTK_BOX (hbox113), image201, FALSE, FALSE, 0);
+
+  label493 = gtk_label_new_with_mnemonic (_("S'inscrire"));
+  gtk_widget_show (label493);
+  gtk_box_pack_start (GTK_BOX (hbox113), label493, FALSE, FALSE, 0);
+
+  g_signal_connect ((gpointer) btn_login, "clicked",
+                    G_CALLBACK (on_btn_login_clicked),
+                    NULL);
+  g_signal_connect ((gpointer) btn_register, "clicked",
+                    G_CALLBACK (on_btn_register_clicked),
+                    NULL);
+
+  /* Store pointers to all widgets, for use by lookup_widget(). */
+  GLADE_HOOKUP_OBJECT_NO_REF (Login, Login, "Login");
+  GLADE_HOOKUP_OBJECT (Login, fixed2, "fixed2");
+  GLADE_HOOKUP_OBJECT (Login, image6, "image6");
+  GLADE_HOOKUP_OBJECT (Login, image7, "image7");
+  GLADE_HOOKUP_OBJECT (Login, image5, "image5");
+  GLADE_HOOKUP_OBJECT (Login, image10, "image10");
+  GLADE_HOOKUP_OBJECT (Login, image9, "image9");
+  GLADE_HOOKUP_OBJECT (Login, image11, "image11");
+  GLADE_HOOKUP_OBJECT (Login, image12, "image12");
+  GLADE_HOOKUP_OBJECT (Login, image13, "image13");
+  GLADE_HOOKUP_OBJECT (Login, image14, "image14");
+  GLADE_HOOKUP_OBJECT (Login, image22, "image22");
+  GLADE_HOOKUP_OBJECT (Login, label488, "label488");
+  GLADE_HOOKUP_OBJECT (Login, entry2, "entry2");
+  GLADE_HOOKUP_OBJECT (Login, entry3, "entry3");
+  GLADE_HOOKUP_OBJECT (Login, label492, "label492");
+  GLADE_HOOKUP_OBJECT (Login, label490, "label490");
+  GLADE_HOOKUP_OBJECT (Login, checkbutton33, "checkbutton33");
+  GLADE_HOOKUP_OBJECT (Login, label489, "label489");
+  GLADE_HOOKUP_OBJECT (Login, btn_login, "btn_login");
+  GLADE_HOOKUP_OBJECT (Login, alignment114, "alignment114");
+  GLADE_HOOKUP_OBJECT (Login, hbox112, "hbox112");
+  GLADE_HOOKUP_OBJECT (Login, image200, "image200");
+  GLADE_HOOKUP_OBJECT (Login, label491, "label491");
+  GLADE_HOOKUP_OBJECT (Login, btn_register, "btn_register");
+  GLADE_HOOKUP_OBJECT (Login, alignment115, "alignment115");
+  GLADE_HOOKUP_OBJECT (Login, hbox113, "hbox113");
+  GLADE_HOOKUP_OBJECT (Login, image201, "image201");
+  GLADE_HOOKUP_OBJECT (Login, label493, "label493");
+
+  return Login;
+}
+
+GtkWidget*
+create_Admin (void)
+{
+  GtkWidget *Admin;
+  GtkWidget *fixed3;
+  GtkWidget *image23;
+  GtkWidget *image24;
+  GtkWidget *image25;
+  GtkWidget *image26;
+  GtkWidget *image27;
+  GtkWidget *image28;
+  GtkWidget *image29;
+  GtkWidget *image30;
+  GtkWidget *image31;
+  GtkWidget *frame1;
+  GtkWidget *notebook_admin;
+  GtkWidget *fixed4;
+  GtkWidget *entry11;
+  GtkWidget *treeview_membres;
+  GtkWidget *label18;
+  GtkWidget *btn_admin_rechercher_membre;
+  GtkWidget *alignment1;
+  GtkWidget *hbox1;
+  GtkWidget *image32;
+  GtkWidget *label19;
+  GtkWidget *frame_stats_membres;
+  GtkWidget *alignment166;
+  GtkWidget *fixed_stats_membres;
+  GtkWidget *frame_revenus;
+  GtkWidget *alignment167;
+  GtkWidget *label_revenus;
+  GtkWidget *label698;
+  GtkWidget *frame_fidelite;
+  GtkWidget *alignment168;
+  GtkWidget *vbox2;
+  GtkWidget *progress_fidelite;
+  GtkWidget *label_fidelite_valeur;
+  GtkWidget *label700;
+  GtkWidget *frame_pyramide;
+  GtkWidget *alignment169;
+  GtkWidget *drawing_pyramide;
+  GtkWidget *label702;
+  GtkWidget *frame_abonnement;
+  GtkWidget *alignment170;
+  GtkWidget *drawing_pie_chart;
+  GtkWidget *label703;
+  GtkWidget *label697;
+  GtkWidget *btn_admin_membre_back_login;
+  GtkWidget *alignment152;
+  GtkWidget *hbox145;
+  GtkWidget *image314;
+  GtkWidget *label658;
+  GtkWidget *frame_dashboard_anim;
+  GtkWidget *alignment171;
+  GtkWidget *fixed_dashboard;
+  GtkWidget *frame_graph_fidelite;
+  GtkWidget *alignment172;
+  GtkWidget *drawing_courbe_fidelite;
+  GtkWidget *label707;
+  GtkWidget *frame_stats_fidelite;
+  GtkWidget *alignment173;
+  GtkWidget *fixed67;
+  GtkWidget *label_fidelite_actuelle;
+  GtkWidget *label_fidelite_progression;
+  GtkWidget *label_fidelite_objectif;
+  GtkWidget *label704;
+  GtkWidget *btn_admin_supprimer_membre;
+  GtkWidget *image353;
+  GtkWidget *btn_admin_modifier_membre;
+  GtkWidget *image354;
+  GtkWidget *btn_admin_ajouter_membre;
+  GtkWidget *image355;
+  GtkWidget *label6;
+  GtkWidget *fixed30;
+  GtkWidget *entry12;
+  GtkWidget *treeview_cours;
+  GtkWidget *label412;
+  GtkWidget *btn_admin_modifier_cours;
+  GtkWidget *image358;
+  GtkWidget *btn_admin_supprimer_cours;
+  GtkWidget *image357;
+  GtkWidget *btn_admin_rechercher_cours;
+  GtkWidget *image356;
+  GtkWidget *btn_admin_ajouter_cours;
+  GtkWidget *image359;
+  GtkWidget *btn_admin_cours_back_login;
+  GtkWidget *alignment151;
+  GtkWidget *hbox144;
+  GtkWidget *image313;
+  GtkWidget *label657;
+  GtkWidget *label7;
+  GtkWidget *fixed31;
+  GtkWidget *entry13;
+  GtkWidget *treeview_entraineurs;
+  GtkWidget *btn_admin_entraineure_back_login;
+  GtkWidget *image360;
+  GtkWidget *btn_admin_rechercher_entraineur;
+  GtkWidget *image361;
+  GtkWidget *label426;
+  GtkWidget *btn_admin_supprimer_entraineur;
+  GtkWidget *image362;
+  GtkWidget *btn_admin_modifier_entraineur;
+  GtkWidget *image363;
+  GtkWidget *btn_admin_ajouter_entraineur;
+  GtkWidget *image364;
+  GtkWidget *label8;
+  GtkWidget *fixed32;
+  GtkWidget *entry10;
+  GtkWidget *treeview_equipements;
+  GtkWidget *btn_admin_back_login;
+  GtkWidget *image365;
+  GtkWidget *label440;
+  GtkWidget *btn_admin_rechercher_equipement;
+  GtkWidget *image369;
+  GtkWidget *btn_admin_supprimer_equipement;
+  GtkWidget *image368;
+  GtkWidget *btn_admin_modifier_equipement;
+  GtkWidget *image366;
+  GtkWidget *btn_admin_ajouter_equipement;
+  GtkWidget *image367;
+  GtkWidget *label9;
+  GtkWidget *fixed33;
+  GtkWidget *entry9;
+  GtkWidget *treeview_centres;
+  GtkWidget *btn_admin_centres_back_login;
+  GtkWidget *image370;
+  GtkWidget *label454;
+  GtkWidget *btn_admin_rechercher_centre;
+  GtkWidget *image371;
+  GtkWidget *btn_admin_modifier_centre;
+  GtkWidget *image373;
+  GtkWidget *btn_admin_supprimer_centre;
+  GtkWidget *image372;
+  GtkWidget *btn_admin_ajouter_centre;
+  GtkWidget *image374;
+  GtkWidget *label10;
+>>>>>>> 217d6f9e5bb0ec7a7475829b6ce4fcdd470fc2eb
   GtkWidget *label5;
 
   window_admin = gtk_window_new (GTK_WINDOW_TOPLEVEL);
@@ -1261,6 +1612,7 @@ create_window_admin (void)
   gtk_fixed_put (GTK_FIXED (page_membres), eb_s1, 20, 70);
   gtk_widget_set_size_request (eb_s1, 280, 100);
 
+<<<<<<< HEAD
   fx_s1 = gtk_fixed_new ();
   gtk_widget_show (fx_s1);
   gtk_container_add (GTK_CONTAINER (eb_s1), fx_s1);
@@ -1448,6 +1800,28 @@ create_window_admin (void)
   gtk_widget_show (eb_sidebar);
   gtk_fixed_put (GTK_FIXED (page_membres), eb_sidebar, 600, 192);
   gtk_widget_set_size_request (eb_sidebar, 56, 220);
+=======
+  entry11 = gtk_entry_new ();
+  gtk_widget_show (entry11);
+  gtk_fixed_put (GTK_FIXED (fixed4), entry11, 40, 144);
+  gtk_widget_set_size_request (entry11, 128, 32);
+  gtk_entry_set_invisible_char (GTK_ENTRY (entry11), 8226);
+
+  treeview_membres = gtk_tree_view_new ();
+  gtk_widget_show (treeview_membres);
+  gtk_fixed_put (GTK_FIXED (fixed4), treeview_membres, 8, 184);
+  gtk_widget_set_size_request (treeview_membres, 400, 232);
+
+  label18 = gtk_label_new (_("ID:"));
+  gtk_widget_show (label18);
+  gtk_fixed_put (GTK_FIXED (fixed4), label18, 0, 144);
+  gtk_widget_set_size_request (label18, 57, 32);
+
+  btn_admin_rechercher_membre = gtk_button_new ();
+  gtk_widget_show (btn_admin_rechercher_membre);
+  gtk_fixed_put (GTK_FIXED (fixed4), btn_admin_rechercher_membre, 184, 144);
+  gtk_widget_set_size_request (btn_admin_rechercher_membre, 40, 32);
+>>>>>>> 217d6f9e5bb0ec7a7475829b6ce4fcdd470fc2eb
 
   fx_sidebar = gtk_fixed_new ();
   gtk_widget_show (fx_sidebar);
@@ -1464,6 +1838,7 @@ create_window_admin (void)
   gtk_widget_show (img_add);
   gtk_container_add (GTK_CONTAINER (btn_add), img_add);
 
+<<<<<<< HEAD
   btn_edit = gtk_button_new ();
   gtk_widget_show (btn_edit);
   gtk_fixed_put (GTK_FIXED (fx_sidebar), btn_edit, 10, 57);
@@ -1558,6 +1933,134 @@ create_window_admin (void)
   fx_evolution = gtk_fixed_new ();
   gtk_widget_show (fx_evolution);
   gtk_container_add (GTK_CONTAINER (eb_evolution), fx_evolution);
+=======
+  label19 = gtk_label_new_with_mnemonic ("");
+  gtk_widget_show (label19);
+  gtk_box_pack_start (GTK_BOX (hbox1), label19, FALSE, FALSE, 0);
+
+  frame_stats_membres = gtk_frame_new (NULL);
+  gtk_widget_show (frame_stats_membres);
+  gtk_fixed_put (GTK_FIXED (fixed4), frame_stats_membres, 0, 0);
+  gtk_widget_set_size_request (frame_stats_membres, 1128, 138);
+  gtk_frame_set_label_align (GTK_FRAME (frame_stats_membres), 0.5, 0.5);
+  gtk_frame_set_shadow_type (GTK_FRAME (frame_stats_membres), GTK_SHADOW_NONE);
+
+  alignment166 = gtk_alignment_new (0.5, 0.5, 1, 1);
+  gtk_widget_show (alignment166);
+  gtk_container_add (GTK_CONTAINER (frame_stats_membres), alignment166);
+  gtk_alignment_set_padding (GTK_ALIGNMENT (alignment166), 0, 0, 12, 0);
+
+  fixed_stats_membres = gtk_fixed_new ();
+  gtk_widget_show (fixed_stats_membres);
+  gtk_container_add (GTK_CONTAINER (alignment166), fixed_stats_membres);
+
+  frame_revenus = gtk_frame_new (NULL);
+  gtk_widget_show (frame_revenus);
+  gtk_fixed_put (GTK_FIXED (fixed_stats_membres), frame_revenus, 10, 10);
+  gtk_widget_set_size_request (frame_revenus, 200, 90);
+  gtk_frame_set_label_align (GTK_FRAME (frame_revenus), 0.5, 0.5);
+  gtk_frame_set_shadow_type (GTK_FRAME (frame_revenus), GTK_SHADOW_NONE);
+
+  alignment167 = gtk_alignment_new (0.5, 0.5, 1, 1);
+  gtk_widget_show (alignment167);
+  gtk_container_add (GTK_CONTAINER (frame_revenus), alignment167);
+  gtk_alignment_set_padding (GTK_ALIGNMENT (alignment167), 0, 0, 12, 0);
+
+  label_revenus = gtk_label_new (_("<span weight=\"bold\" size=\"18000\" foreground=\"gray\">0 DT</span>"));
+  gtk_widget_show (label_revenus);
+  gtk_container_add (GTK_CONTAINER (alignment167), label_revenus);
+  gtk_label_set_use_markup (GTK_LABEL (label_revenus), TRUE);
+  gtk_label_set_justify (GTK_LABEL (label_revenus), GTK_JUSTIFY_CENTER);
+  gtk_misc_set_alignment (GTK_MISC (label_revenus), 0.5, 0.47);
+  gtk_label_set_width_chars (GTK_LABEL (label_revenus), 1);
+
+  label698 = gtk_label_new (_("<b>\360\237\222\260 Revenus mensuels</b>"));
+  gtk_widget_show (label698);
+  gtk_frame_set_label_widget (GTK_FRAME (frame_revenus), label698);
+  gtk_label_set_use_markup (GTK_LABEL (label698), TRUE);
+
+  frame_fidelite = gtk_frame_new (NULL);
+  gtk_widget_show (frame_fidelite);
+  gtk_fixed_put (GTK_FIXED (fixed_stats_membres), frame_fidelite, 220, 10);
+  gtk_widget_set_size_request (frame_fidelite, 200, 90);
+  gtk_frame_set_label_align (GTK_FRAME (frame_fidelite), 0.5, 0.5);
+  gtk_frame_set_shadow_type (GTK_FRAME (frame_fidelite), GTK_SHADOW_NONE);
+
+  alignment168 = gtk_alignment_new (0.5, 0.5, 1, 1);
+  gtk_widget_show (alignment168);
+  gtk_container_add (GTK_CONTAINER (frame_fidelite), alignment168);
+
+  vbox2 = gtk_vbox_new (FALSE, 5);
+  gtk_widget_show (vbox2);
+  gtk_container_add (GTK_CONTAINER (alignment168), vbox2);
+  gtk_container_set_border_width (GTK_CONTAINER (vbox2), 10);
+
+  progress_fidelite = gtk_progress_bar_new ();
+  gtk_widget_show (progress_fidelite);
+  gtk_box_pack_start (GTK_BOX (vbox2), progress_fidelite, FALSE, FALSE, 0);
+
+  label_fidelite_valeur = gtk_label_new (_("0%"));
+  gtk_widget_show (label_fidelite_valeur);
+  gtk_box_pack_start (GTK_BOX (vbox2), label_fidelite_valeur, FALSE, FALSE, 0);
+
+  label700 = gtk_label_new (_("<b>\360\237\223\210 Taux de fid\303\251lit\303\251</b>"));
+  gtk_widget_show (label700);
+  gtk_frame_set_label_widget (GTK_FRAME (frame_fidelite), label700);
+  gtk_label_set_use_markup (GTK_LABEL (label700), TRUE);
+
+  frame_pyramide = gtk_frame_new (NULL);
+  gtk_widget_show (frame_pyramide);
+  gtk_fixed_put (GTK_FIXED (fixed_stats_membres), frame_pyramide, 430, 10);
+  gtk_widget_set_size_request (frame_pyramide, 360, 90);
+  gtk_frame_set_label_align (GTK_FRAME (frame_pyramide), 0.5, 0.5);
+  gtk_frame_set_shadow_type (GTK_FRAME (frame_pyramide), GTK_SHADOW_NONE);
+
+  alignment169 = gtk_alignment_new (0.5, 0.5, 1, 1);
+  gtk_widget_show (alignment169);
+  gtk_container_add (GTK_CONTAINER (frame_pyramide), alignment169);
+  gtk_alignment_set_padding (GTK_ALIGNMENT (alignment169), 0, 0, 12, 0);
+
+  drawing_pyramide = gtk_drawing_area_new ();
+  gtk_widget_show (drawing_pyramide);
+  gtk_container_add (GTK_CONTAINER (alignment169), drawing_pyramide);
+  gtk_widget_set_size_request (drawing_pyramide, 340, 70);
+
+  label702 = gtk_label_new (_("<b>\360\237\221\245 R\303\251partition par \303\242ge</b>"));
+  gtk_widget_show (label702);
+  gtk_frame_set_label_widget (GTK_FRAME (frame_pyramide), label702);
+  gtk_label_set_use_markup (GTK_LABEL (label702), TRUE);
+
+  frame_abonnement = gtk_frame_new (NULL);
+  gtk_widget_show (frame_abonnement);
+  gtk_fixed_put (GTK_FIXED (fixed_stats_membres), frame_abonnement, 800, 10);
+  gtk_widget_set_size_request (frame_abonnement, 180, 90);
+  gtk_frame_set_shadow_type (GTK_FRAME (frame_abonnement), GTK_SHADOW_NONE);
+
+  alignment170 = gtk_alignment_new (0.5, 0.5, 1, 1);
+  gtk_widget_show (alignment170);
+  gtk_container_add (GTK_CONTAINER (frame_abonnement), alignment170);
+  gtk_alignment_set_padding (GTK_ALIGNMENT (alignment170), 0, 0, 12, 0);
+
+  drawing_pie_chart = gtk_drawing_area_new ();
+  gtk_widget_show (drawing_pie_chart);
+  gtk_container_add (GTK_CONTAINER (alignment170), drawing_pie_chart);
+  gtk_widget_set_size_request (drawing_pie_chart, 160, 60);
+
+  label703 = gtk_label_new (_("<b>\360\237\223\212 Abonnements</b>"));
+  gtk_widget_show (label703);
+  gtk_frame_set_label_widget (GTK_FRAME (frame_abonnement), label703);
+  gtk_label_set_use_markup (GTK_LABEL (label703), TRUE);
+
+  label697 = gtk_label_new (_("<b>\360\237\223\212 Statistiques Membres</b>"));
+  gtk_widget_show (label697);
+  gtk_frame_set_label_widget (GTK_FRAME (frame_stats_membres), label697);
+  gtk_label_set_use_markup (GTK_LABEL (label697), TRUE);
+
+  btn_admin_membre_back_login = gtk_button_new ();
+  gtk_widget_show (btn_admin_membre_back_login);
+  gtk_fixed_put (GTK_FIXED (fixed4), btn_admin_membre_back_login, 0, 0);
+  gtk_widget_set_size_request (btn_admin_membre_back_login, 48, 29);
+>>>>>>> 217d6f9e5bb0ec7a7475829b6ce4fcdd470fc2eb
 
   lbl_evo_hdr = gtk_label_new ("<span foreground=\"#f0ede8\" weight=\"bold\" size=\"10000\">\303\211VOLUTION DU TAUX DE FID\303\211LIT\303\211</span>");
   gtk_widget_show (lbl_evo_hdr);
@@ -1575,6 +2078,7 @@ create_window_admin (void)
   gtk_fixed_put (GTK_FIXED (fx_evolution), da_evolution, 12, 35);
   gtk_widget_set_size_request (da_evolution, 548, 172);
 
+<<<<<<< HEAD
   // Bouton déconnexion
   btn_deco_mem = gtk_button_new ();
   gtk_widget_show (btn_deco_mem);
@@ -1590,6 +2094,110 @@ create_window_admin (void)
   label1 = gtk_label_new ("Gestion des Members");
   gtk_widget_show (label1);
   gtk_notebook_set_tab_label (GTK_NOTEBOOK (notebook1), gtk_notebook_get_nth_page (GTK_NOTEBOOK (notebook1), 0), label1);
+=======
+  label658 = gtk_label_new_with_mnemonic ("");
+  gtk_widget_show (label658);
+  gtk_box_pack_start (GTK_BOX (hbox145), label658, FALSE, FALSE, 0);
+
+  frame_dashboard_anim = gtk_frame_new (NULL);
+  gtk_widget_show (frame_dashboard_anim);
+  gtk_fixed_put (GTK_FIXED (fixed4), frame_dashboard_anim, 456, 152);
+  gtk_widget_set_size_request (frame_dashboard_anim, 630, 232);
+  gtk_frame_set_shadow_type (GTK_FRAME (frame_dashboard_anim), GTK_SHADOW_NONE);
+
+  alignment171 = gtk_alignment_new (0.5, 0.5, 1, 1);
+  gtk_widget_show (alignment171);
+  gtk_container_add (GTK_CONTAINER (frame_dashboard_anim), alignment171);
+  gtk_alignment_set_padding (GTK_ALIGNMENT (alignment171), 0, 0, 12, 0);
+
+  fixed_dashboard = gtk_fixed_new ();
+  gtk_widget_show (fixed_dashboard);
+  gtk_container_add (GTK_CONTAINER (alignment171), fixed_dashboard);
+
+  frame_graph_fidelite = gtk_frame_new (NULL);
+  gtk_widget_show (frame_graph_fidelite);
+  gtk_fixed_put (GTK_FIXED (fixed_dashboard), frame_graph_fidelite, 0, 0);
+  gtk_widget_set_size_request (frame_graph_fidelite, 590, 150);
+  gtk_frame_set_label_align (GTK_FRAME (frame_graph_fidelite), 0.5, 0.5);
+  gtk_frame_set_shadow_type (GTK_FRAME (frame_graph_fidelite), GTK_SHADOW_NONE);
+
+  alignment172 = gtk_alignment_new (0.5, 0.5, 1, 1);
+  gtk_widget_show (alignment172);
+  gtk_container_add (GTK_CONTAINER (frame_graph_fidelite), alignment172);
+  gtk_alignment_set_padding (GTK_ALIGNMENT (alignment172), 0, 0, 12, 0);
+
+  drawing_courbe_fidelite = gtk_drawing_area_new ();
+  gtk_widget_show (drawing_courbe_fidelite);
+  gtk_container_add (GTK_CONTAINER (alignment172), drawing_courbe_fidelite);
+  gtk_widget_set_size_request (drawing_courbe_fidelite, 570, 120);
+
+  label707 = gtk_label_new (_("<b>\360\237\223\210 \303\211volution du taux de fid\303\251lit\303\251</b>"));
+  gtk_widget_show (label707);
+  gtk_frame_set_label_widget (GTK_FRAME (frame_graph_fidelite), label707);
+  gtk_label_set_use_markup (GTK_LABEL (label707), TRUE);
+
+  frame_stats_fidelite = gtk_frame_new (NULL);
+  gtk_widget_show (frame_stats_fidelite);
+  gtk_fixed_put (GTK_FIXED (fixed_dashboard), frame_stats_fidelite, 0, 152);
+  gtk_widget_set_size_request (frame_stats_fidelite, 590, 40);
+  gtk_frame_set_shadow_type (GTK_FRAME (frame_stats_fidelite), GTK_SHADOW_NONE);
+
+  alignment173 = gtk_alignment_new (0.5, 0.5, 1, 1);
+  gtk_widget_show (alignment173);
+  gtk_container_add (GTK_CONTAINER (frame_stats_fidelite), alignment173);
+  gtk_alignment_set_padding (GTK_ALIGNMENT (alignment173), 0, 0, 12, 0);
+
+  fixed67 = gtk_fixed_new ();
+  gtk_widget_show (fixed67);
+  gtk_container_add (GTK_CONTAINER (alignment173), fixed67);
+
+  label_fidelite_actuelle = gtk_label_new (_("\342\255\220 Taux actuel: 0%"));
+  gtk_widget_show (label_fidelite_actuelle);
+  gtk_fixed_put (GTK_FIXED (fixed67), label_fidelite_actuelle, 10, 5);
+  gtk_widget_set_size_request (label_fidelite_actuelle, 180, 40);
+
+  label_fidelite_progression = gtk_label_new (_("\360\237\223\210 Progression: 0%"));
+  gtk_widget_show (label_fidelite_progression);
+  gtk_fixed_put (GTK_FIXED (fixed67), label_fidelite_progression, 200, 5);
+  gtk_widget_set_size_request (label_fidelite_progression, 180, 40);
+
+  label_fidelite_objectif = gtk_label_new (_("\360\237\216\257 Objectif: 75%"));
+  gtk_widget_show (label_fidelite_objectif);
+  gtk_fixed_put (GTK_FIXED (fixed67), label_fidelite_objectif, 390, 5);
+  gtk_widget_set_size_request (label_fidelite_objectif, 180, 40);
+
+  label704 = gtk_label_new (_("<b>\360\237\216\256 DASHBOARD</b>"));
+  gtk_widget_show (label704);
+  gtk_frame_set_label_widget (GTK_FRAME (frame_dashboard_anim), label704);
+  gtk_label_set_use_markup (GTK_LABEL (label704), TRUE);
+
+  btn_admin_supprimer_membre = gtk_button_new ();
+  gtk_widget_show (btn_admin_supprimer_membre);
+  gtk_fixed_put (GTK_FIXED (fixed4), btn_admin_supprimer_membre, 240, 144);
+  gtk_widget_set_size_request (btn_admin_supprimer_membre, 40, 32);
+
+  image353 = gtk_image_new_from_stock ("gtk-delete", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image353);
+  gtk_container_add (GTK_CONTAINER (btn_admin_supprimer_membre), image353);
+
+  btn_admin_modifier_membre = gtk_button_new ();
+  gtk_widget_show (btn_admin_modifier_membre);
+  gtk_fixed_put (GTK_FIXED (fixed4), btn_admin_modifier_membre, 296, 144);
+  gtk_widget_set_size_request (btn_admin_modifier_membre, 40, 32);
+
+  image354 = gtk_image_new_from_stock ("gtk-edit", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image354);
+  gtk_container_add (GTK_CONTAINER (btn_admin_modifier_membre), image354);
+
+  btn_admin_ajouter_membre = gtk_button_new ();
+  gtk_widget_show (btn_admin_ajouter_membre);
+  gtk_fixed_put (GTK_FIXED (fixed4), btn_admin_ajouter_membre, 352, 144);
+  gtk_widget_set_size_request (btn_admin_ajouter_membre, 40, 32);
+
+  image355 = gtk_image_new_from_stock ("gtk-add", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image355);
+  gtk_container_add (GTK_CONTAINER (btn_admin_ajouter_membre), image355);
+>>>>>>> 217d6f9e5bb0ec7a7475829b6ce4fcdd470fc2eb
 
   // ==================== PAGE COURS ====================
   eventbox2 = gtk_event_box_new ();
@@ -1601,6 +2209,7 @@ create_window_admin (void)
   gtk_container_add (GTK_CONTAINER (eventbox2), page_cours);
   gtk_widget_set_size_request (page_cours, 1280, 748);
 
+<<<<<<< HEAD
   lbl_cours_title = gtk_label_new ("<span foreground=\"#f0ede8\" weight=\"bold\" size=\"16000\">Tableau de bord</span>");
   gtk_widget_show (lbl_cours_title);
   gtk_fixed_put (GTK_FIXED (page_cours), lbl_cours_title, 20, 18);
@@ -1906,6 +2515,64 @@ create_window_admin (void)
   gtk_widget_show (eb_top5_cours);
   gtk_fixed_put (GTK_FIXED (page_cours), eb_top5_cours, 660, 430);
   gtk_widget_set_size_request (eb_top5_cours, 588, 220);
+=======
+  entry12 = gtk_entry_new ();
+  gtk_widget_show (entry12);
+  gtk_fixed_put (GTK_FIXED (fixed30), entry12, 48, 160);
+  gtk_widget_set_size_request (entry12, 144, 32);
+  gtk_entry_set_invisible_char (GTK_ENTRY (entry12), 8226);
+
+  treeview_cours = gtk_tree_view_new ();
+  gtk_widget_show (treeview_cours);
+  gtk_fixed_put (GTK_FIXED (fixed30), treeview_cours, 16, 192);
+  gtk_widget_set_size_request (treeview_cours, 408, 216);
+
+  label412 = gtk_label_new (_("ID:"));
+  gtk_widget_show (label412);
+  gtk_fixed_put (GTK_FIXED (fixed30), label412, 0, 160);
+  gtk_widget_set_size_request (label412, 65, 24);
+
+  btn_admin_modifier_cours = gtk_button_new ();
+  gtk_widget_show (btn_admin_modifier_cours);
+  gtk_fixed_put (GTK_FIXED (fixed30), btn_admin_modifier_cours, 304, 160);
+  gtk_widget_set_size_request (btn_admin_modifier_cours, 40, 32);
+
+  image358 = gtk_image_new_from_stock ("gtk-edit", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image358);
+  gtk_container_add (GTK_CONTAINER (btn_admin_modifier_cours), image358);
+
+  btn_admin_supprimer_cours = gtk_button_new ();
+  gtk_widget_show (btn_admin_supprimer_cours);
+  gtk_fixed_put (GTK_FIXED (fixed30), btn_admin_supprimer_cours, 256, 160);
+  gtk_widget_set_size_request (btn_admin_supprimer_cours, 40, 32);
+
+  image357 = gtk_image_new_from_stock ("gtk-delete", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image357);
+  gtk_container_add (GTK_CONTAINER (btn_admin_supprimer_cours), image357);
+
+  btn_admin_rechercher_cours = gtk_button_new ();
+  gtk_widget_show (btn_admin_rechercher_cours);
+  gtk_fixed_put (GTK_FIXED (fixed30), btn_admin_rechercher_cours, 208, 160);
+  gtk_widget_set_size_request (btn_admin_rechercher_cours, 40, 32);
+
+  image356 = gtk_image_new_from_stock ("gtk-find", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image356);
+  gtk_container_add (GTK_CONTAINER (btn_admin_rechercher_cours), image356);
+
+  btn_admin_ajouter_cours = gtk_button_new ();
+  gtk_widget_show (btn_admin_ajouter_cours);
+  gtk_fixed_put (GTK_FIXED (fixed30), btn_admin_ajouter_cours, 352, 160);
+  gtk_widget_set_size_request (btn_admin_ajouter_cours, 40, 32);
+
+  image359 = gtk_image_new_from_stock ("gtk-add", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image359);
+  gtk_container_add (GTK_CONTAINER (btn_admin_ajouter_cours), image359);
+
+  btn_admin_cours_back_login = gtk_button_new ();
+  gtk_widget_show (btn_admin_cours_back_login);
+  gtk_fixed_put (GTK_FIXED (fixed30), btn_admin_cours_back_login, 0, 0);
+  gtk_widget_set_size_request (btn_admin_cours_back_login, 32, 32);
+>>>>>>> 217d6f9e5bb0ec7a7475829b6ce4fcdd470fc2eb
 
   fx_top5_cours = gtk_fixed_new ();
   gtk_widget_show (fx_top5_cours);
@@ -1922,6 +2589,7 @@ create_window_admin (void)
   gtk_fixed_put (GTK_FIXED (fx_top5_cours), sep_top5, 12, 29);
   gtk_widget_set_size_request (sep_top5, 548, 0);
 
+<<<<<<< HEAD
   da_top5_cours = gtk_drawing_area_new ();
   gtk_widget_show (da_top5_cours);
   gtk_fixed_put (GTK_FIXED (fx_top5_cours), da_top5_cours, 12, 35);
@@ -1937,11 +2605,21 @@ create_window_admin (void)
   gtk_widget_show (lbl_deco_cours);
   gtk_container_add (GTK_CONTAINER (btn_deco_cours), lbl_deco_cours);
   gtk_label_set_use_markup (GTK_LABEL (lbl_deco_cours), TRUE);
+=======
+  label657 = gtk_label_new_with_mnemonic ("");
+  gtk_widget_show (label657);
+  gtk_box_pack_start (GTK_BOX (hbox144), label657, FALSE, FALSE, 0);
+
+  label7 = gtk_label_new (_("Gestion des cours"));
+  gtk_widget_show (label7);
+  gtk_notebook_set_tab_label (GTK_NOTEBOOK (notebook_admin), gtk_notebook_get_nth_page (GTK_NOTEBOOK (notebook_admin), 1), label7);
+>>>>>>> 217d6f9e5bb0ec7a7475829b6ce4fcdd470fc2eb
 
   label2 = gtk_label_new ("Gestion de Cours");
   gtk_widget_show (label2);
   gtk_notebook_set_tab_label (GTK_NOTEBOOK (notebook1), gtk_notebook_get_nth_page (GTK_NOTEBOOK (notebook1), 1), label2);
 
+<<<<<<< HEAD
   // ==================== PAGE ENTRAINEURS ====================
   eventbox3 = gtk_event_box_new ();
   gtk_widget_show (eventbox3);
@@ -2283,6 +2961,68 @@ create_window_admin (void)
   gtk_fixed_put (GTK_FIXED (page_entraineurs), btn_deco_ent, 20, 700);
   gtk_widget_set_size_request (btn_deco_ent, 180, 32);
   GTK_WIDGET_UNSET_FLAGS (btn_deco_ent, GTK_CAN_FOCUS);
+=======
+  entry13 = gtk_entry_new ();
+  gtk_widget_show (entry13);
+  gtk_fixed_put (GTK_FIXED (fixed31), entry13, 40, 144);
+  gtk_widget_set_size_request (entry13, 112, 32);
+  gtk_entry_set_invisible_char (GTK_ENTRY (entry13), 8226);
+
+  treeview_entraineurs = gtk_tree_view_new ();
+  gtk_widget_show (treeview_entraineurs);
+  gtk_fixed_put (GTK_FIXED (fixed31), treeview_entraineurs, 8, 184);
+  gtk_widget_set_size_request (treeview_entraineurs, 352, 232);
+
+  btn_admin_entraineure_back_login = gtk_button_new ();
+  gtk_widget_show (btn_admin_entraineure_back_login);
+  gtk_fixed_put (GTK_FIXED (fixed31), btn_admin_entraineure_back_login, 0, 0);
+  gtk_widget_set_size_request (btn_admin_entraineure_back_login, 48, 32);
+
+  image360 = gtk_image_new_from_stock ("gtk-go-back", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image360);
+  gtk_container_add (GTK_CONTAINER (btn_admin_entraineure_back_login), image360);
+
+  btn_admin_rechercher_entraineur = gtk_button_new ();
+  gtk_widget_show (btn_admin_rechercher_entraineur);
+  gtk_fixed_put (GTK_FIXED (fixed31), btn_admin_rechercher_entraineur, 160, 144);
+  gtk_widget_set_size_request (btn_admin_rechercher_entraineur, 48, 32);
+
+  image361 = gtk_image_new_from_stock ("gtk-find", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image361);
+  gtk_container_add (GTK_CONTAINER (btn_admin_rechercher_entraineur), image361);
+
+  label426 = gtk_label_new (_("ID:"));
+  gtk_widget_show (label426);
+  gtk_fixed_put (GTK_FIXED (fixed31), label426, 0, 144);
+  gtk_widget_set_size_request (label426, 48, 33);
+
+  btn_admin_supprimer_entraineur = gtk_button_new ();
+  gtk_widget_show (btn_admin_supprimer_entraineur);
+  gtk_fixed_put (GTK_FIXED (fixed31), btn_admin_supprimer_entraineur, 216, 144);
+  gtk_widget_set_size_request (btn_admin_supprimer_entraineur, 40, 32);
+
+  image362 = gtk_image_new_from_stock ("gtk-delete", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image362);
+  gtk_container_add (GTK_CONTAINER (btn_admin_supprimer_entraineur), image362);
+
+  btn_admin_modifier_entraineur = gtk_button_new ();
+  gtk_widget_show (btn_admin_modifier_entraineur);
+  gtk_fixed_put (GTK_FIXED (fixed31), btn_admin_modifier_entraineur, 272, 144);
+  gtk_widget_set_size_request (btn_admin_modifier_entraineur, 40, 32);
+
+  image363 = gtk_image_new_from_stock ("gtk-edit", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image363);
+  gtk_container_add (GTK_CONTAINER (btn_admin_modifier_entraineur), image363);
+
+  btn_admin_ajouter_entraineur = gtk_button_new ();
+  gtk_widget_show (btn_admin_ajouter_entraineur);
+  gtk_fixed_put (GTK_FIXED (fixed31), btn_admin_ajouter_entraineur, 320, 144);
+  gtk_widget_set_size_request (btn_admin_ajouter_entraineur, 40, 32);
+
+  image364 = gtk_image_new_from_stock ("gtk-add", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image364);
+  gtk_container_add (GTK_CONTAINER (btn_admin_ajouter_entraineur), image364);
+>>>>>>> 217d6f9e5bb0ec7a7475829b6ce4fcdd470fc2eb
 
   lbl_deco_ent = gtk_label_new ("<span foreground=\"#E24B4A\" size=\"11000\">D\303\251connexion</span>");
   gtk_widget_show (lbl_deco_ent);
@@ -2293,6 +3033,7 @@ create_window_admin (void)
   gtk_widget_show (label3);
   gtk_notebook_set_tab_label (GTK_NOTEBOOK (notebook1), gtk_notebook_get_nth_page (GTK_NOTEBOOK (notebook1), 2), label3);
 
+<<<<<<< HEAD
   // ==================== PAGE EQUIPEMENTS ====================
   eventbox4 = gtk_event_box_new ();
   gtk_widget_show (eventbox4);
@@ -2653,6 +3394,68 @@ create_window_admin (void)
   gtk_widget_show (page_centres);
   gtk_container_add (GTK_CONTAINER (eventbox5), page_centres);
   gtk_widget_set_size_request (page_centres, 1280, 748);
+=======
+  entry10 = gtk_entry_new ();
+  gtk_widget_show (entry10);
+  gtk_fixed_put (GTK_FIXED (fixed32), entry10, 88, 160);
+  gtk_widget_set_size_request (entry10, 152, 32);
+  gtk_entry_set_invisible_char (GTK_ENTRY (entry10), 8226);
+
+  treeview_equipements = gtk_tree_view_new ();
+  gtk_widget_show (treeview_equipements);
+  gtk_fixed_put (GTK_FIXED (fixed32), treeview_equipements, 0, 200);
+  gtk_widget_set_size_request (treeview_equipements, 432, 216);
+
+  btn_admin_back_login = gtk_button_new ();
+  gtk_widget_show (btn_admin_back_login);
+  gtk_fixed_put (GTK_FIXED (fixed32), btn_admin_back_login, 0, 0);
+  gtk_widget_set_size_request (btn_admin_back_login, 40, 32);
+
+  image365 = gtk_image_new_from_stock ("gtk-go-back", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image365);
+  gtk_container_add (GTK_CONTAINER (btn_admin_back_login), image365);
+
+  label440 = gtk_label_new (_("R\303\251f\303\251rence:"));
+  gtk_widget_show (label440);
+  gtk_fixed_put (GTK_FIXED (fixed32), label440, 0, 160);
+  gtk_widget_set_size_request (label440, 88, 32);
+
+  btn_admin_rechercher_equipement = gtk_button_new ();
+  gtk_widget_show (btn_admin_rechercher_equipement);
+  gtk_fixed_put (GTK_FIXED (fixed32), btn_admin_rechercher_equipement, 248, 160);
+  gtk_widget_set_size_request (btn_admin_rechercher_equipement, 40, 32);
+
+  image369 = gtk_image_new_from_stock ("gtk-find", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image369);
+  gtk_container_add (GTK_CONTAINER (btn_admin_rechercher_equipement), image369);
+
+  btn_admin_supprimer_equipement = gtk_button_new ();
+  gtk_widget_show (btn_admin_supprimer_equipement);
+  gtk_fixed_put (GTK_FIXED (fixed32), btn_admin_supprimer_equipement, 296, 160);
+  gtk_widget_set_size_request (btn_admin_supprimer_equipement, 40, 32);
+
+  image368 = gtk_image_new_from_stock ("gtk-delete", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image368);
+  gtk_container_add (GTK_CONTAINER (btn_admin_supprimer_equipement), image368);
+
+  btn_admin_modifier_equipement = gtk_button_new ();
+  gtk_widget_show (btn_admin_modifier_equipement);
+  gtk_fixed_put (GTK_FIXED (fixed32), btn_admin_modifier_equipement, 344, 160);
+  gtk_widget_set_size_request (btn_admin_modifier_equipement, 40, 32);
+
+  image366 = gtk_image_new_from_stock ("gtk-edit", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image366);
+  gtk_container_add (GTK_CONTAINER (btn_admin_modifier_equipement), image366);
+
+  btn_admin_ajouter_equipement = gtk_button_new ();
+  gtk_widget_show (btn_admin_ajouter_equipement);
+  gtk_fixed_put (GTK_FIXED (fixed32), btn_admin_ajouter_equipement, 392, 160);
+  gtk_widget_set_size_request (btn_admin_ajouter_equipement, 40, 32);
+
+  image367 = gtk_image_new_from_stock ("gtk-add", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image367);
+  gtk_container_add (GTK_CONTAINER (btn_admin_ajouter_equipement), image367);
+>>>>>>> 217d6f9e5bb0ec7a7475829b6ce4fcdd470fc2eb
 
   lbl_ctr_title = gtk_label_new ("<span foreground=\"#f0ede8\" weight=\"bold\" size=\"16000\">Tableau de bord</span>");
   gtk_widget_show (lbl_ctr_title);
@@ -2666,6 +3469,7 @@ create_window_admin (void)
   gtk_widget_set_size_request (lbl_ctr_date, 0, 0);
   gtk_label_set_use_markup (GTK_LABEL (lbl_ctr_date), TRUE);
 
+<<<<<<< HEAD
   // Cards centres
   eb_r1 = gtk_event_box_new ();
   gtk_widget_show (eb_r1);
@@ -2985,6 +3789,68 @@ create_window_admin (void)
   gtk_fixed_put (GTK_FIXED (page_centres), btn_deco_ctr, 20, 700);
   gtk_widget_set_size_request (btn_deco_ctr, 180, 32);
   GTK_WIDGET_UNSET_FLAGS (btn_deco_ctr, GTK_CAN_FOCUS);
+=======
+  entry9 = gtk_entry_new ();
+  gtk_widget_show (entry9);
+  gtk_fixed_put (GTK_FIXED (fixed33), entry9, 40, 168);
+  gtk_widget_set_size_request (entry9, 88, 32);
+  gtk_entry_set_invisible_char (GTK_ENTRY (entry9), 8226);
+
+  treeview_centres = gtk_tree_view_new ();
+  gtk_widget_show (treeview_centres);
+  gtk_fixed_put (GTK_FIXED (fixed33), treeview_centres, 8, 200);
+  gtk_widget_set_size_request (treeview_centres, 328, 224);
+
+  btn_admin_centres_back_login = gtk_button_new ();
+  gtk_widget_show (btn_admin_centres_back_login);
+  gtk_fixed_put (GTK_FIXED (fixed33), btn_admin_centres_back_login, 0, 0);
+  gtk_widget_set_size_request (btn_admin_centres_back_login, 48, 32);
+
+  image370 = gtk_image_new_from_stock ("gtk-go-back", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image370);
+  gtk_container_add (GTK_CONTAINER (btn_admin_centres_back_login), image370);
+
+  label454 = gtk_label_new (_("ID:"));
+  gtk_widget_show (label454);
+  gtk_fixed_put (GTK_FIXED (fixed33), label454, 0, 168);
+  gtk_widget_set_size_request (label454, 48, 33);
+
+  btn_admin_rechercher_centre = gtk_button_new ();
+  gtk_widget_show (btn_admin_rechercher_centre);
+  gtk_fixed_put (GTK_FIXED (fixed33), btn_admin_rechercher_centre, 128, 168);
+  gtk_widget_set_size_request (btn_admin_rechercher_centre, 48, 32);
+
+  image371 = gtk_image_new_from_stock ("gtk-find", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image371);
+  gtk_container_add (GTK_CONTAINER (btn_admin_rechercher_centre), image371);
+
+  btn_admin_modifier_centre = gtk_button_new ();
+  gtk_widget_show (btn_admin_modifier_centre);
+  gtk_fixed_put (GTK_FIXED (fixed33), btn_admin_modifier_centre, 240, 168);
+  gtk_widget_set_size_request (btn_admin_modifier_centre, 48, 32);
+
+  image373 = gtk_image_new_from_stock ("gtk-edit", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image373);
+  gtk_container_add (GTK_CONTAINER (btn_admin_modifier_centre), image373);
+
+  btn_admin_supprimer_centre = gtk_button_new ();
+  gtk_widget_show (btn_admin_supprimer_centre);
+  gtk_fixed_put (GTK_FIXED (fixed33), btn_admin_supprimer_centre, 184, 168);
+  gtk_widget_set_size_request (btn_admin_supprimer_centre, 48, 32);
+
+  image372 = gtk_image_new_from_stock ("gtk-delete", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image372);
+  gtk_container_add (GTK_CONTAINER (btn_admin_supprimer_centre), image372);
+
+  btn_admin_ajouter_centre = gtk_button_new ();
+  gtk_widget_show (btn_admin_ajouter_centre);
+  gtk_fixed_put (GTK_FIXED (fixed33), btn_admin_ajouter_centre, 296, 168);
+  gtk_widget_set_size_request (btn_admin_ajouter_centre, 48, 32);
+
+  image374 = gtk_image_new_from_stock ("gtk-add", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image374);
+  gtk_container_add (GTK_CONTAINER (btn_admin_ajouter_centre), image374);
+>>>>>>> 217d6f9e5bb0ec7a7475829b6ce4fcdd470fc2eb
 
   lbl_deco_ctr = gtk_label_new ("<span foreground=\"#E24B4A\" size=\"11000\">D\303\251connexion</span>");
   gtk_widget_show (lbl_deco_ctr);
@@ -3032,8 +3898,16 @@ create_window_admin (void)
   g_signal_connect ((gpointer) eb_sidebar, "expose_event",
                     G_CALLBACK (on_eb_sidebar_expose),
                     NULL);
+<<<<<<< HEAD
   g_signal_connect ((gpointer) btn_add, "clicked",
                     G_CALLBACK (on_btn_add_clicked),
+=======
+  g_signal_connect ((gpointer) btn_admin_membre_back_login, "clicked",
+                    G_CALLBACK (on_btn_admin_membre_back_login_clicked),
+                    NULL);
+  g_signal_connect ((gpointer) btn_admin_supprimer_membre, "clicked",
+                    G_CALLBACK (on_btn_admin_supprimer_membre_clicked),
+>>>>>>> 217d6f9e5bb0ec7a7475829b6ce4fcdd470fc2eb
                     NULL);
   g_signal_connect ((gpointer) btn_edit, "clicked",
                     G_CALLBACK (on_btn_edit_clicked),
@@ -3041,6 +3915,7 @@ create_window_admin (void)
   g_signal_connect ((gpointer) btn_delete, "clicked",
                     G_CALLBACK (on_btn_delete_clicked),
                     NULL);
+<<<<<<< HEAD
   g_signal_connect ((gpointer) btn_search_side, "clicked",
                     G_CALLBACK (on_btn_search_side_clicked),
                     NULL);
@@ -3091,12 +3966,24 @@ create_window_admin (void)
                     NULL);
   g_signal_connect ((gpointer) eb_sidebar_cours, "expose_event",
                     G_CALLBACK (on_eb_sidebar_expose),
+=======
+  g_signal_connect ((gpointer) treeview_cours, "row_activated",
+                    G_CALLBACK (on_treeview_cours_row_activated),
+                    NULL);
+  g_signal_connect ((gpointer) btn_admin_modifier_cours, "clicked",
+                    G_CALLBACK (on_btn_admin_modifier_cours_clicked),
+>>>>>>> 217d6f9e5bb0ec7a7475829b6ce4fcdd470fc2eb
                     NULL);
   g_signal_connect ((gpointer) btn_c_add, "clicked",
                     G_CALLBACK (on_btn_cours_add_clicked),
                     NULL);
+<<<<<<< HEAD
   g_signal_connect ((gpointer) btn_c_edit, "clicked",
                     G_CALLBACK (on_btn_cours_edit_clicked),
+=======
+  g_signal_connect ((gpointer) btn_admin_rechercher_cours, "clicked",
+                    G_CALLBACK (on_btn_admin_rechercher_cours_clicked),
+>>>>>>> 217d6f9e5bb0ec7a7475829b6ce4fcdd470fc2eb
                     NULL);
   g_signal_connect ((gpointer) btn_c_del, "clicked",
                     G_CALLBACK (on_btn_cours_delete_clicked),
@@ -3104,6 +3991,7 @@ create_window_admin (void)
   g_signal_connect ((gpointer) btn_c_search, "clicked",
                     G_CALLBACK (on_btn_cours_search_clicked),
                     NULL);
+<<<<<<< HEAD
   g_signal_connect ((gpointer) eb_repartition_horaire, "expose_event",
                     G_CALLBACK (on_eb_dark_panel_expose),
                     NULL);
@@ -3151,10 +4039,21 @@ create_window_admin (void)
                     NULL);
   g_signal_connect ((gpointer) eb_sidebar_ent, "expose_event",
                     G_CALLBACK (on_eb_sidebar_expose),
+=======
+  g_signal_connect ((gpointer) treeview_entraineurs, "row_activated",
+                    G_CALLBACK (on_treeview_entraineurs_row_activated),
+                    NULL);
+  g_signal_connect ((gpointer) btn_admin_entraineure_back_login, "clicked",
+                    G_CALLBACK (on_btn_admin_entraineure_back_login_clicked),
+                    NULL);
+  g_signal_connect ((gpointer) btn_admin_rechercher_entraineur, "clicked",
+                    G_CALLBACK (on_btn_admin_rechercher_entraineur_clicked),
+>>>>>>> 217d6f9e5bb0ec7a7475829b6ce4fcdd470fc2eb
                     NULL);
   g_signal_connect ((gpointer) btn_e_add, "clicked",
                     G_CALLBACK (on_btn_ent_add_clicked),
                     NULL);
+<<<<<<< HEAD
   g_signal_connect ((gpointer) btn_e_edit, "clicked",
                     G_CALLBACK (on_btn_ent_edit_clicked),
                     NULL);
@@ -3205,15 +4104,27 @@ create_window_admin (void)
                     NULL);
   g_signal_connect ((gpointer) eb_eq_panel, "expose_event",
                     G_CALLBACK (on_eb_dark_panel_expose),
+=======
+  g_signal_connect ((gpointer) btn_admin_modifier_entraineur, "clicked",
+                    G_CALLBACK (on_btn_admin_modifier_entraineur_clicked),
+                    NULL);
+  g_signal_connect ((gpointer) btn_admin_ajouter_entraineur, "clicked",
+                    G_CALLBACK (on_btn_admin_ajouter_entraineur_clicked),
+>>>>>>> 217d6f9e5bb0ec7a7475829b6ce4fcdd470fc2eb
                     NULL);
   g_signal_connect ((gpointer) treeview_equipements, "row_activated",
                     G_CALLBACK (on_treeview_equipements_row_activated),
                     NULL);
+<<<<<<< HEAD
   g_signal_connect ((gpointer) eb_sidebar_eq, "expose_event",
                     G_CALLBACK (on_eb_sidebar_expose),
                     NULL);
   g_signal_connect ((gpointer) btn_eq_add, "clicked",
                     G_CALLBACK (on_btn_equip_add_clicked),
+=======
+  g_signal_connect ((gpointer) btn_admin_back_login, "clicked",
+                    G_CALLBACK (on_btn_admin_back_login_clicked),
+>>>>>>> 217d6f9e5bb0ec7a7475829b6ce4fcdd470fc2eb
                     NULL);
   g_signal_connect ((gpointer) btn_eq_edit, "clicked",
                     G_CALLBACK (on_btn_equip_edit_clicked),
@@ -3221,6 +4132,7 @@ create_window_admin (void)
   g_signal_connect ((gpointer) btn_eq_del, "clicked",
                     G_CALLBACK (on_btn_equip_delete_clicked),
                     NULL);
+<<<<<<< HEAD
   g_signal_connect ((gpointer) btn_eq_search, "clicked",
                     G_CALLBACK (on_btn_equip_search_clicked),
                     NULL);
@@ -3265,10 +4177,18 @@ create_window_admin (void)
                     NULL);
   g_signal_connect ((gpointer) eb_ctr_panel, "expose_event",
                     G_CALLBACK (on_eb_dark_panel_expose),
+=======
+  g_signal_connect ((gpointer) btn_admin_modifier_equipement, "clicked",
+                    G_CALLBACK (on_btn_admin_modifier_equipement_clicked),
+                    NULL);
+  g_signal_connect ((gpointer) btn_admin_ajouter_equipement, "clicked",
+                    G_CALLBACK (on_btn_admin_ajouter_equipement_clicked),
+>>>>>>> 217d6f9e5bb0ec7a7475829b6ce4fcdd470fc2eb
                     NULL);
   g_signal_connect ((gpointer) treeview_centres, "row_activated",
                     G_CALLBACK (on_treeview_centres_row_activated),
                     NULL);
+<<<<<<< HEAD
   g_signal_connect ((gpointer) eb_sidebar_ctr, "expose_event",
                     G_CALLBACK (on_eb_sidebar_expose),
                     NULL);
@@ -3682,6 +4602,161 @@ create_window_admin (void)
         charger_centres_dans_treeview(tv_ctr);
     }
   return window_admin;
+=======
+  g_signal_connect ((gpointer) btn_admin_centres_back_login, "clicked",
+                    G_CALLBACK (on_btn_admin_centres_back_login_clicked),
+                    NULL);
+  g_signal_connect ((gpointer) btn_admin_rechercher_centre, "clicked",
+                    G_CALLBACK (on_btn_admin_rechercher_centre_clicked),
+                    NULL);
+  g_signal_connect ((gpointer) btn_admin_modifier_centre, "clicked",
+                    G_CALLBACK (on_btn_admin_modifier_centre_clicked),
+                    NULL);
+  g_signal_connect ((gpointer) btn_admin_supprimer_centre, "clicked",
+                    G_CALLBACK (on_btn_admin_supprimer_centre_clicked),
+                    NULL);
+  g_signal_connect ((gpointer) btn_admin_ajouter_centre, "clicked",
+                    G_CALLBACK (on_btn_admin_ajouter_centre_clicked),
+                    NULL);
+
+  /* Store pointers to all widgets, for use by lookup_widget(). */
+  GLADE_HOOKUP_OBJECT_NO_REF (Admin, Admin, "Admin");
+  GLADE_HOOKUP_OBJECT (Admin, fixed3, "fixed3");
+  GLADE_HOOKUP_OBJECT (Admin, image23, "image23");
+  GLADE_HOOKUP_OBJECT (Admin, image24, "image24");
+  GLADE_HOOKUP_OBJECT (Admin, image25, "image25");
+  GLADE_HOOKUP_OBJECT (Admin, image26, "image26");
+  GLADE_HOOKUP_OBJECT (Admin, image27, "image27");
+  GLADE_HOOKUP_OBJECT (Admin, image28, "image28");
+  GLADE_HOOKUP_OBJECT (Admin, image29, "image29");
+  GLADE_HOOKUP_OBJECT (Admin, image30, "image30");
+  GLADE_HOOKUP_OBJECT (Admin, image31, "image31");
+  GLADE_HOOKUP_OBJECT (Admin, frame1, "frame1");
+  GLADE_HOOKUP_OBJECT (Admin, notebook_admin, "notebook_admin");
+  GLADE_HOOKUP_OBJECT (Admin, fixed4, "fixed4");
+  GLADE_HOOKUP_OBJECT (Admin, entry11, "entry11");
+  GLADE_HOOKUP_OBJECT (Admin, treeview_membres, "treeview_membres");
+  GLADE_HOOKUP_OBJECT (Admin, label18, "label18");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_rechercher_membre, "btn_admin_rechercher_membre");
+  GLADE_HOOKUP_OBJECT (Admin, alignment1, "alignment1");
+  GLADE_HOOKUP_OBJECT (Admin, hbox1, "hbox1");
+  GLADE_HOOKUP_OBJECT (Admin, image32, "image32");
+  GLADE_HOOKUP_OBJECT (Admin, label19, "label19");
+  GLADE_HOOKUP_OBJECT (Admin, frame_stats_membres, "frame_stats_membres");
+  GLADE_HOOKUP_OBJECT (Admin, alignment166, "alignment166");
+  GLADE_HOOKUP_OBJECT (Admin, fixed_stats_membres, "fixed_stats_membres");
+  GLADE_HOOKUP_OBJECT (Admin, frame_revenus, "frame_revenus");
+  GLADE_HOOKUP_OBJECT (Admin, alignment167, "alignment167");
+  GLADE_HOOKUP_OBJECT (Admin, label_revenus, "label_revenus");
+  GLADE_HOOKUP_OBJECT (Admin, label698, "label698");
+  GLADE_HOOKUP_OBJECT (Admin, frame_fidelite, "frame_fidelite");
+  GLADE_HOOKUP_OBJECT (Admin, alignment168, "alignment168");
+  GLADE_HOOKUP_OBJECT (Admin, vbox2, "vbox2");
+  GLADE_HOOKUP_OBJECT (Admin, progress_fidelite, "progress_fidelite");
+  GLADE_HOOKUP_OBJECT (Admin, label_fidelite_valeur, "label_fidelite_valeur");
+  GLADE_HOOKUP_OBJECT (Admin, label700, "label700");
+  GLADE_HOOKUP_OBJECT (Admin, frame_pyramide, "frame_pyramide");
+  GLADE_HOOKUP_OBJECT (Admin, alignment169, "alignment169");
+  GLADE_HOOKUP_OBJECT (Admin, drawing_pyramide, "drawing_pyramide");
+  GLADE_HOOKUP_OBJECT (Admin, label702, "label702");
+  GLADE_HOOKUP_OBJECT (Admin, frame_abonnement, "frame_abonnement");
+  GLADE_HOOKUP_OBJECT (Admin, alignment170, "alignment170");
+  GLADE_HOOKUP_OBJECT (Admin, drawing_pie_chart, "drawing_pie_chart");
+  GLADE_HOOKUP_OBJECT (Admin, label703, "label703");
+  GLADE_HOOKUP_OBJECT (Admin, label697, "label697");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_membre_back_login, "btn_admin_membre_back_login");
+  GLADE_HOOKUP_OBJECT (Admin, alignment152, "alignment152");
+  GLADE_HOOKUP_OBJECT (Admin, hbox145, "hbox145");
+  GLADE_HOOKUP_OBJECT (Admin, image314, "image314");
+  GLADE_HOOKUP_OBJECT (Admin, label658, "label658");
+  GLADE_HOOKUP_OBJECT (Admin, frame_dashboard_anim, "frame_dashboard_anim");
+  GLADE_HOOKUP_OBJECT (Admin, alignment171, "alignment171");
+  GLADE_HOOKUP_OBJECT (Admin, fixed_dashboard, "fixed_dashboard");
+  GLADE_HOOKUP_OBJECT (Admin, frame_graph_fidelite, "frame_graph_fidelite");
+  GLADE_HOOKUP_OBJECT (Admin, alignment172, "alignment172");
+  GLADE_HOOKUP_OBJECT (Admin, drawing_courbe_fidelite, "drawing_courbe_fidelite");
+  GLADE_HOOKUP_OBJECT (Admin, label707, "label707");
+  GLADE_HOOKUP_OBJECT (Admin, frame_stats_fidelite, "frame_stats_fidelite");
+  GLADE_HOOKUP_OBJECT (Admin, alignment173, "alignment173");
+  GLADE_HOOKUP_OBJECT (Admin, fixed67, "fixed67");
+  GLADE_HOOKUP_OBJECT (Admin, label_fidelite_actuelle, "label_fidelite_actuelle");
+  GLADE_HOOKUP_OBJECT (Admin, label_fidelite_progression, "label_fidelite_progression");
+  GLADE_HOOKUP_OBJECT (Admin, label_fidelite_objectif, "label_fidelite_objectif");
+  GLADE_HOOKUP_OBJECT (Admin, label704, "label704");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_supprimer_membre, "btn_admin_supprimer_membre");
+  GLADE_HOOKUP_OBJECT (Admin, image353, "image353");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_modifier_membre, "btn_admin_modifier_membre");
+  GLADE_HOOKUP_OBJECT (Admin, image354, "image354");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_ajouter_membre, "btn_admin_ajouter_membre");
+  GLADE_HOOKUP_OBJECT (Admin, image355, "image355");
+  GLADE_HOOKUP_OBJECT (Admin, label6, "label6");
+  GLADE_HOOKUP_OBJECT (Admin, fixed30, "fixed30");
+  GLADE_HOOKUP_OBJECT (Admin, entry12, "entry12");
+  GLADE_HOOKUP_OBJECT (Admin, treeview_cours, "treeview_cours");
+  GLADE_HOOKUP_OBJECT (Admin, label412, "label412");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_modifier_cours, "btn_admin_modifier_cours");
+  GLADE_HOOKUP_OBJECT (Admin, image358, "image358");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_supprimer_cours, "btn_admin_supprimer_cours");
+  GLADE_HOOKUP_OBJECT (Admin, image357, "image357");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_rechercher_cours, "btn_admin_rechercher_cours");
+  GLADE_HOOKUP_OBJECT (Admin, image356, "image356");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_ajouter_cours, "btn_admin_ajouter_cours");
+  GLADE_HOOKUP_OBJECT (Admin, image359, "image359");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_cours_back_login, "btn_admin_cours_back_login");
+  GLADE_HOOKUP_OBJECT (Admin, alignment151, "alignment151");
+  GLADE_HOOKUP_OBJECT (Admin, hbox144, "hbox144");
+  GLADE_HOOKUP_OBJECT (Admin, image313, "image313");
+  GLADE_HOOKUP_OBJECT (Admin, label657, "label657");
+  GLADE_HOOKUP_OBJECT (Admin, label7, "label7");
+  GLADE_HOOKUP_OBJECT (Admin, fixed31, "fixed31");
+  GLADE_HOOKUP_OBJECT (Admin, entry13, "entry13");
+  GLADE_HOOKUP_OBJECT (Admin, treeview_entraineurs, "treeview_entraineurs");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_entraineure_back_login, "btn_admin_entraineure_back_login");
+  GLADE_HOOKUP_OBJECT (Admin, image360, "image360");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_rechercher_entraineur, "btn_admin_rechercher_entraineur");
+  GLADE_HOOKUP_OBJECT (Admin, image361, "image361");
+  GLADE_HOOKUP_OBJECT (Admin, label426, "label426");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_supprimer_entraineur, "btn_admin_supprimer_entraineur");
+  GLADE_HOOKUP_OBJECT (Admin, image362, "image362");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_modifier_entraineur, "btn_admin_modifier_entraineur");
+  GLADE_HOOKUP_OBJECT (Admin, image363, "image363");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_ajouter_entraineur, "btn_admin_ajouter_entraineur");
+  GLADE_HOOKUP_OBJECT (Admin, image364, "image364");
+  GLADE_HOOKUP_OBJECT (Admin, label8, "label8");
+  GLADE_HOOKUP_OBJECT (Admin, fixed32, "fixed32");
+  GLADE_HOOKUP_OBJECT (Admin, entry10, "entry10");
+  GLADE_HOOKUP_OBJECT (Admin, treeview_equipements, "treeview_equipements");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_back_login, "btn_admin_back_login");
+  GLADE_HOOKUP_OBJECT (Admin, image365, "image365");
+  GLADE_HOOKUP_OBJECT (Admin, label440, "label440");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_rechercher_equipement, "btn_admin_rechercher_equipement");
+  GLADE_HOOKUP_OBJECT (Admin, image369, "image369");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_supprimer_equipement, "btn_admin_supprimer_equipement");
+  GLADE_HOOKUP_OBJECT (Admin, image368, "image368");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_modifier_equipement, "btn_admin_modifier_equipement");
+  GLADE_HOOKUP_OBJECT (Admin, image366, "image366");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_ajouter_equipement, "btn_admin_ajouter_equipement");
+  GLADE_HOOKUP_OBJECT (Admin, image367, "image367");
+  GLADE_HOOKUP_OBJECT (Admin, label9, "label9");
+  GLADE_HOOKUP_OBJECT (Admin, fixed33, "fixed33");
+  GLADE_HOOKUP_OBJECT (Admin, entry9, "entry9");
+  GLADE_HOOKUP_OBJECT (Admin, treeview_centres, "treeview_centres");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_centres_back_login, "btn_admin_centres_back_login");
+  GLADE_HOOKUP_OBJECT (Admin, image370, "image370");
+  GLADE_HOOKUP_OBJECT (Admin, label454, "label454");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_rechercher_centre, "btn_admin_rechercher_centre");
+  GLADE_HOOKUP_OBJECT (Admin, image371, "image371");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_modifier_centre, "btn_admin_modifier_centre");
+  GLADE_HOOKUP_OBJECT (Admin, image373, "image373");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_supprimer_centre, "btn_admin_supprimer_centre");
+  GLADE_HOOKUP_OBJECT (Admin, image372, "image372");
+  GLADE_HOOKUP_OBJECT (Admin, btn_admin_ajouter_centre, "btn_admin_ajouter_centre");
+  GLADE_HOOKUP_OBJECT (Admin, image374, "image374");
+  GLADE_HOOKUP_OBJECT (Admin, label10, "label10");
+  GLADE_HOOKUP_OBJECT (Admin, label5, "label5");
+
+  return Admin;
+>>>>>>> 217d6f9e5bb0ec7a7475829b6ce4fcdd470fc2eb
 }
 
 GtkWidget*
@@ -3911,10 +4986,16 @@ create_window_dashboard_member (void)
   gtk_widget_show (sep_member_bot);
   gtk_box_pack_start (GTK_BOX (vbox_member_root), sep_member_bot, FALSE, TRUE, 0);
 
+<<<<<<< HEAD
   hbox_member_bottom_bar = gtk_hbox_new (FALSE, 0);
   gtk_widget_show (hbox_member_bottom_bar);
   gtk_box_pack_start (GTK_BOX (vbox_member_root), hbox_member_bottom_bar, FALSE, TRUE, 0);
   gtk_container_set_border_width (GTK_CONTAINER (hbox_member_bottom_bar), 10);
+=======
+  combo_entry2 = GTK_COMBO (combo_ajouter_centre)->entry;
+  gtk_widget_show (combo_entry2);
+  gtk_entry_set_invisible_char (GTK_ENTRY (combo_entry2), 8226);
+>>>>>>> 217d6f9e5bb0ec7a7475829b6ce4fcdd470fc2eb
 
   btn_deconnexion_m = gtk_button_new_with_mnemonic ("D\303\251connexion");
   gtk_widget_show (btn_deconnexion_m);
